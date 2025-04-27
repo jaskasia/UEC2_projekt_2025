@@ -1,13 +1,13 @@
 /**
  *  Copyright (C) 2025  AGH University of Science and Technology
  * MTM UEC2
- * Author: Piotr Kaczmarczyk
+ * Author: Piotr Kaczmarczyk, Joanna Jaśkowiec
  *
  * Description:
  * Testbench for vga_timing module.
  */
 
-module vga_timing_tb;
+ module vga_timing_tb;
 
     timeunit 1ns;
     timeprecision 1ps;
@@ -20,7 +20,6 @@ module vga_timing_tb;
      */
 
     localparam CLK_PERIOD = 25;     // 40 MHz
-
 
     /**
      * Local variables and signals
@@ -55,7 +54,6 @@ module vga_timing_tb;
         #(2.00*CLK_PERIOD) rst = 1'b0;
     end
 
-
     /**
      * Dut placement
      */
@@ -76,14 +74,32 @@ module vga_timing_tb;
      */
 
     // Here you can declare tasks with immediate assertions (assert).
+    task test_hcount_max;
+        assert (hcount <= HOR_TOTAL_TIME - 1) //1055
+            $error("The hcount value is wrong");
+    endtask
 
+    task test_vcount_max;
+        assert (vcount <= VER_TOTAL_TIME - 1) //627
+            $error("The vcount value is wrong.");
+    endtask
 
     /**
      * Assertions
      */
 
     // Here you can declare concurrent assertions (assert property).
+    assert property (@(posedge clk) ((hcount >= HOR_PIXELS) && (hcount <= HOR_TOTAL_TIME - 1)) |-> hblnk == 1) else
+        $error("Inocrrect hblnk value.");
+    
+    assert property (@(posedge clk) ((vcount >= VER_PIXELS) && (vcount <= VER_TOTAL_TIME - 1)) |-> vblnk == 1) else
+        $error("Incorrect vblnk value.");
 
+    assert property (@(posedge clk) ((hcount >= HOR_SYNC_START) && (hcount <= HOR_SYNC_END)) |-> hsync == 1) else
+        $error("Incorrect hsync value.");
+
+    assert property (@(posedge clk) ((vcount >= VER_SYNC_START) && (vcount <= VER_SYNC_END)) |-> vsync == 1) else
+        $error("Incorrect vsync value.");
 
     /**
      * Main test
