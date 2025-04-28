@@ -9,18 +9,18 @@
 
 package vga_pkg;
 
-    // Parameters for VGA Display 800 x 600 @ 60fps using a 40 MHz clock;
-    localparam HOR_PIXELS = 800;
-    localparam VER_PIXELS = 600;
+    // Parameters for VGA Display 1024 x 768 @ 60fps using a 40 MHz clock;
+    localparam HOR_PIXELS = 1024;
+    localparam VER_PIXELS = 768;
 
     // Add VGA timing parameters here and refer to them in other modules.
-    localparam HOR_TOTAL_TIME = 1056;
-    localparam VER_TOTAL_TIME = 628;
+    localparam HOR_TOTAL_TIME = 1344;
+    localparam VER_TOTAL_TIME = 806;
 
-    localparam HOR_SYNC_START = 840;
-    localparam HOR_SYNC_END = 967; //128 (Hor Sync Time)
+    localparam HOR_SYNC_START = 1048;
+    localparam HOR_SYNC_END = 1183; //136 (Hor Sync Time)
 
-    localparam VER_SYNC_START = 601;
-    localparam VER_SYNC_END = 604; //4 (Ver Sync Time)
+    localparam VER_SYNC_START = 771;
+    localparam VER_SYNC_END = 776; //6 (Ver Sync Time)
 
 endpackage
