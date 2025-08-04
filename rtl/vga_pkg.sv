@@ -23,4 +23,10 @@ package vga_pkg;
     localparam VER_SYNC_START = 771;
     localparam VER_SYNC_END = 776; //6 (Ver Sync Time)
 
+    localparam HOR_BLANK_START = 1024;
+    localparam HOR_BLANK_END = 1344; //320 (Hor Blank Time)
+
+    localparam VER_BLANK_START = 768;
+    localparam VER_BLANK_END = 806; //38 (Ver Blank Time)
+
 endpackage

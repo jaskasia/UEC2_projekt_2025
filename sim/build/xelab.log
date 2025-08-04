@@ -1,6 +1,6 @@
 Vivado Simulator v2021.2
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: /home_local/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab work.vga_timing_tb -snapshot vga_timing_tb -prj /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/vga_timing/vga_timing.prj -timescale 1ns/1ps -L unisims_ver -debug typical 
+Running: /home_local/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab work.vga_timing_tb -snapshot vga_timing_tb -prj /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/vga_timing/vga_timing.prj -timescale 1ns/1ps -L unisims_ver -standalone -runall 
 Multi-threading is on. Using 6 slave threads.
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_pkg.sv" into library work
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_timing.sv" into library work
