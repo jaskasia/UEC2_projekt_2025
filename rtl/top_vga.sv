@@ -13,13 +13,16 @@
  */
 
 module top_vga (
-        input  logic clk,
+    input  logic clk40MHz,
+    input  logic clk100MHz,
         input  logic rst,
         output logic vs,
         output logic hs,
         output logic [3:0] r,
         output logic [3:0] g,
-        output logic [3:0] b
+        output logic [3:0] b,
+    inout wire ps2_clk,
+    inout wire ps2_data
     );
 
     timeunit 1ns;
@@ -55,7 +58,7 @@ module top_vga (
      */
 
     vga_timing u_vga_timing (
-        .clk,
+        .clk(clk40MHz),
         .rst,
         .vcount (vcount_tim),
         .vsync  (vsync_tim),
@@ -66,7 +69,7 @@ module top_vga (
     );
 
     draw_bg u_draw_bg (
-        .clk,
+        .clk(clk40MHz),
         .rst,
 
         .vcount_in  (vcount_tim),

@@ -20,7 +20,7 @@
  * the difference between VER_SYNC_START and VER_TOTAL_TIME.
  */
 
-module top_vga_tb;
+ module top_vga_tb;
 
     timeunit 1ns;
     timeprecision 1ps;
@@ -30,14 +30,15 @@ module top_vga_tb;
      */
 
     localparam CLK_PERIOD = 25;     // 40 MHz
-
+    localparam CLK_PERIOD_100 = 10;     // 100 MHz
 
     /**
      * Local variables and signals
      */
 
-    logic clk, rst;
+    logic clk100MHz, clk40MHz, rst;
     wire vs, hs;
+    wire ps2_data, ps2_clk;
     wire [3:0] r, g, b;
 
 
@@ -46,23 +47,30 @@ module top_vga_tb;
      */
 
     initial begin
-        clk = 1'b0;
-        forever #(CLK_PERIOD/2) clk = ~clk;
+        clk40MHz = 1'b0;
+        forever #(CLK_PERIOD/2) clk40MHz = ~clk40MHz;
     end
 
+    initial begin
+        clk100MHz = 1'b0;
+        forever #(CLK_PERIOD_100/2) clk100MHz = ~clk100MHz;
+    end
 
     /**
      * Submodules instances
      */
 
     top_vga dut (
-        .clk(clk),
+        .clk40MHz(clk40MHz),
+        .clk100MHz(clk100MHz),
         .rst(rst),
         .vs(vs),
         .hs(hs),
         .r(r),
         .g(g),
-        .b(b)
+        .b(b),
+        .ps2_clk(ps2_clk),
+        .ps2_data(ps2_data)
     );
 
     tiff_writer #(
@@ -70,7 +78,7 @@ module top_vga_tb;
         .YDIM(16'd628),
         .FILE_DIR("../../results")
     ) u_tiff_writer (
-        .clk(clk),
+        .clk(clk40MHz),
         .r({r,r}), // fabricate an 8-bit value
         .g({g,g}), // fabricate an 8-bit value
         .b({b,b}), // fabricate an 8-bit value
