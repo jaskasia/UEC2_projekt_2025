@@ -29,4 +29,5 @@ package vga_pkg;
     localparam VER_BLANK_START = 768;
     localparam VER_BLANK_END = 806; //38 (Ver Blank Time)
 
+
 endpackage

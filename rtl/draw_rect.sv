@@ -7,82 +7,120 @@
  * Draw background.
  */
 
-module draw_bg (
-        input  logic clk,
-        input  logic rst,
+ module draw_rect (
+    input  logic clk,
+    input  logic rst,
+    input logic [11:0] r_xpos,
+    input logic [11:0] r_ypos,
+    input logic [11:0] rgb_pixel,
+    output  logic [11:0] pixel_address,
 
-        input  logic [10:0] vcount_in,
-        input  logic        vsync_in,
-        input  logic        vblnk_in,
-        input  logic [10:0] hcount_in,
-        input  logic        hsync_in,
-        input  logic        hblnk_in,
+    vga_if.in in,
+    vga_if.out out
+);
 
-        output logic [10:0] vcount_out,
-        output logic        vsync_out,
-        output logic        vblnk_out,
-        output logic [10:0] hcount_out,
-        output logic        hsync_out,
-        output logic        hblnk_out,
-
-        output logic [11:0] rgb_out
-    );
-
-    timeunit 1ns;
-    timeprecision 1ps;
-
-    import vga_pkg::*;
+timeunit 1ns;
+timeprecision 1ps;
 
 
-    /**
-     * Local variables and signals
-     */
+/**
+ * Local variables and signals
+ */
 
-    logic [11:0] rgb_nxt;
+localparam RECT_AGH_WIDTH = 48;
+localparam RECT_AGH_HEIGHT = 64;
+
+logic [10:0] hcount1, vcount1, vcount2, hcount2;
+logic [11:0] rgb_nxt, rgb1, rgb2;
+logic hsync1, hsync2, hblnk1, hblnk2, vsync1, vsync2, vblnk1, vblnk2;
+logic [5:0] addrx, addry;
+
+/**
+ * Internal logic
+ */
 
 
-    /**
-     * Internal logic
-     */
+always_ff @(posedge clk) begin : bg_ff_blk1
+    if (rst) begin
+        vcount1 <= '0;
+        vsync1  <= '0;
+        vblnk1  <= '0;
+        hcount1 <= '0;
+        hsync1  <= '0;
+        hblnk1  <= '0;
+        rgb1    <= '0;
+    end else begin
+        vcount1 <= in.vcount;
+        vsync1  <= in.vsync;
+        vblnk1  <= in.vblnk;
+        hcount1 <= in.hcount;
+        hsync1  <= in.hsync;
+        hblnk1  <= in.hblnk;
+        rgb1    <= in.rgb;
+    end
+end
 
-    always_ff @(posedge clk) begin : bg_ff_blk
-        if (rst) begin
-            vcount_out <= '0;
-            vsync_out  <= '0;
-            vblnk_out  <= '0;
-            hcount_out <= '0;
-            hsync_out  <= '0;
-            hblnk_out  <= '0;
-            rgb_out    <= '0;
+always_ff @(posedge clk) begin : bg_ff_blk2
+    if (rst) begin
+        vcount2 <= '0;
+        vsync2  <= '0;
+        vblnk2  <= '0;
+        hcount2 <= '0;
+        hsync2  <= '0;
+        hblnk2  <= '0;
+        rgb2    <= '0;
+    end else begin
+        vcount2 <= vcount1;
+        vsync2  <= vsync1;
+        vblnk2  <= vblnk1;
+        hcount2 <= hcount1;
+        hsync2  <= hsync1;
+        hblnk2  <= hblnk1;
+        rgb2    <= rgb1;
+    end
+end
+
+always_ff @(posedge clk) begin : bg_ff_blk3
+    if (rst) begin
+        out.vcount <= '0;
+        out.vsync  <= '0;
+        out.vblnk  <= '0;
+        out.hcount <= '0;
+        out.hsync  <= '0;
+        out.hblnk  <= '0;
+        out.rgb    <= '0;
+        pixel_address <= '0;
+    end else begin
+        out.vcount <= vcount2;
+        out.vsync  <= vsync2;
+        out.vblnk  <= vblnk2;
+        out.hcount <= hcount2;
+        out.hsync  <= hsync2;
+        out.hblnk  <= hblnk2;
+        out.rgb    <= rgb_nxt;
+        pixel_address <= {addry, addrx};
+    end
+end
+
+
+
+always_comb begin : rect_comb_blk
+    if (hblnk2 || vblnk2) begin
+        rgb_nxt = 12'h000; // czarne tło poza aktywnym obszarem
+    end else begin
+        if ((hcount2 >= r_xpos) && // Rectangle start position (left side)
+            (hcount2 < (r_xpos + RECT_AGH_WIDTH)) && // Rectangle end position (right side)
+            (vcount2 >= r_ypos) && // Rectangle start position (top side)
+            (vcount2 < (r_ypos + RECT_AGH_HEIGHT))) begin // Rectangle end position (bottom side)
+            rgb_nxt = rgb_pixel;
         end else begin
-            vcount_out <= vcount_in;
-            vsync_out  <= vsync_in;
-            vblnk_out  <= vblnk_in;
-            hcount_out <= hcount_in;
-            hsync_out  <= hsync_in;
-            hblnk_out  <= hblnk_in;
-            rgb_out    <= rgb_nxt;
+            rgb_nxt = rgb2;
         end
     end
+end
 
-    always_comb begin : bg_comb_blk
-        if (vblnk_in || hblnk_in) begin             // Blanking region:
-            rgb_nxt = 12'h0_0_0;                    // - make it it black.
-        end else begin                              // Active region:
-            if (vcount_in == 0)                     // - top edge:
-                rgb_nxt = 12'hf_f_0;                // - - make a yellow line.
-            else if (vcount_in == VER_PIXELS - 1)   // - bottom edge:
-                rgb_nxt = 12'hf_0_0;                // - - make a red line.
-            else if (hcount_in == 0)                // - left edge:
-                rgb_nxt = 12'h0_f_0;                // - - make a green line.
-            else if (hcount_in == HOR_PIXELS - 1)   // - right edge:
-                rgb_nxt = 12'h0_0_f;                // - - make a blue line.
-
-            // Add your code here.
-
-            else                                    // The rest of active display pixels:
-                rgb_nxt = 12'h8_8_8;                // - fill with gray.
-        end
-    end
-
+always_comb begin
+    addry = in.vcount - r_ypos;
+    addrx = in.hcount - r_xpos;
+end
 endmodule

@@ -8,15 +8,19 @@
 # For syntax detail see AMD Xilinx UG 900:
 # https://docs.xilinx.com/r/en-US/ug900-vivado-logic-simulation/Project-File-.prj-Syntax
 
-
 sv work ../../rtl/vga_pkg.sv \
         ../../rtl/vga_timing.sv \
         ../../rtl/draw_bg.sv \
         ../../rtl/top_vga.sv \
+        ../../rtl/draw_rect.sv \ 
+        ../../rtl/move_ctr_fsm.sv \
+        ../../fpga/rtl/top_vga_basys3.sv \
         ../common/tiff_writer.sv \
-        top_vga_tb.sv
+        top_fpga_tb.sv
 
+vhdl work ../../rtl/keyboard/Ps2Interface.vhd
+
+# compile glbl module - required for IP simulation
 verilog work ../common/glbl.v \
-             ../../fpga/rtl/clk_wiz_0.v \
-             ../../fpga/rtl/clk_wiz_0_clk_wiz.v
-             
+        ../../fpga/rtl/clk_wiz_0.v \
+        ../../fpga/rtl/clk_wiz_0_clk_wiz.v 

@@ -12,81 +12,68 @@
  * The project top module.
  */
 
-module top_vga (
+ module top_vga (
     input  logic clk40MHz,
     input  logic clk100MHz,
-        input  logic rst,
-        output logic vs,
-        output logic hs,
-        output logic [3:0] r,
-        output logic [3:0] g,
-        output logic [3:0] b,
+    input  logic rst,
+    output logic vs,
+    output logic hs,
+    output logic [3:0] r,
+    output logic [3:0] g,
+    output logic [3:0] b,
     inout wire ps2_clk,
     inout wire ps2_data
-    );
+);
 
-    timeunit 1ns;
-    timeprecision 1ps;
-
-    /**
-     * Local variables and signals
-     */
-
-    // VGA signals from timing
-    wire [10:0] vcount_tim, hcount_tim;
-    wire vsync_tim, hsync_tim;
-    wire vblnk_tim, hblnk_tim;
-
-    // VGA signals from background
-    wire [10:0] vcount_bg, hcount_bg;
-    wire vsync_bg, hsync_bg;
-    wire vblnk_bg, hblnk_bg;
-    wire [11:0] rgb_bg;
+timeunit 1ns;
+timeprecision 1ps;
 
 
-    /**
-     * Signals assignments
-     */
+/**
+ * Local variables and signals
+ */
 
-    assign vs = vsync_bg;
-    assign hs = hsync_bg;
-    assign {r,g,b} = rgb_bg;
+// VGA - interface name, instnces names
+vga_if tim_bg();
+vga_if bg_rect();
+vga_if rect_out();
+
+/**
+ * Signals assignments
+ */
+
+assign vs = rect_out.vsync;
+assign hs = rect_out.hsync;
+assign {r,g,b} = rect_out.rgb;
 
 
-    /**
-     * Submodules instances
-     */
+/**
+ * Submodules instances
+ */
 
-    vga_timing u_vga_timing (
-        .clk(clk40MHz),
-        .rst,
-        .vcount (vcount_tim),
-        .vsync  (vsync_tim),
-        .vblnk  (vblnk_tim),
-        .hcount (hcount_tim),
-        .hsync  (hsync_tim),
-        .hblnk  (hblnk_tim)
-    );
+vga_timing u_vga_timing (
+    .clk(clk40MHz),
+    .rst,
+    .vcount (tim_bg.vcount),
+    .vsync  (tim_bg.vsync),
+    .vblnk  (tim_bg.vblnk),
+    .hcount (tim_bg.hcount),
+    .hsync  (tim_bg.hsync),
+    .hblnk  (tim_bg.hblnk)
+);
 
-    draw_bg u_draw_bg (
-        .clk(clk40MHz),
-        .rst,
+draw_bg u_draw_bg (
+    .clk(clk40MHz),
+    .rst,
+    .in(tim_bg.in),
+    .out(bg_rect.out)
+);
 
-        .vcount_in  (vcount_tim),
-        .vsync_in   (vsync_tim),
-        .vblnk_in   (vblnk_tim),
-        .hcount_in  (hcount_tim),
-        .hsync_in   (hsync_tim),
-        .hblnk_in   (hblnk_tim),
-
-        .vcount_out (vcount_bg),
-        .vsync_out  (vsync_bg),
-        .vblnk_out  (vblnk_bg),
-        .hcount_out (hcount_bg),
-        .hsync_out  (hsync_bg),
-        .hblnk_out  (hblnk_bg),
-
-        .rgb_out    (rgb_bg)
-    );
+draw_rect u_draw_rect (
+    .clk(clk40MHz),
+    .rst,
+    .in(bg_rect.in),
+    .out(rect_out.out)
+);
 
 endmodule
