@@ -1,159 +1,178 @@
 *** Start analyzing build configuration ***
-INFO: Auto-config - Scanning: /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025
-INFO: Auto-config - VLOG: /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025
-INFO: Auto-config - VHDL: /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025
+INFO: Auto-config - Scanning: C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025
+INFO: Auto-config - VLOG: C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025
+INFO: Auto-config - VHDL: C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025
 INFO: Auto-config - Wrote:
-    .dvt/default.build.auto.1
+    .dvt\default.build.auto.1
 *** List of included argument files ***
-    Build configuration file:  /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/.dvt/default.build
-    -f /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/.dvt/default.build.auto.1
+    Build configuration file:  C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\.dvt\default.build
+    -f c:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\.dvt\default.build.auto.1
 *** List of invocations ***
-Invocation #1 +dvt_init+dvt in /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/.dvt/default.build.auto.1 at line 9
-*** Done analyzing build configuration [1s.245ms] ***
+Invocation #1 +dvt_init+dvt in c:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\.dvt\default.build.auto.1 at line 9
+*** Done analyzing build configuration [537 ms] ***
 
 *** Start VHDL build ***
-*** Done parsing [529 ms] ***
+*** Done parsing [711 ms] ***
 *** Total number of lines [0] ***
-Performing post full build step 1 (VHDL - RU) [67 ms] ...
+Performing post full build step 1 (VHDL - RU) [47 ms] ...
 *** Files summary [0 total, 0 unique] ***
-*** Done VHDL build [615 ms] ***
+*** Done VHDL build [758 ms] ***
 
 *** Start SystemVerilog build ***
 *** Invocation #1***
-Loading (1) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv [156 ms, 131 lines, SystemVerilog_2012] ...
-Loading (2) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/top_vga.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/top_vga.sv [13 ms, 90 lines, SystemVerilog_2012] ...
-Loading (3) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/tiff_writer.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/tiff_writer.sv [195 ms, 405 lines, SystemVerilog_2012] ...
-Loading (4) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv [15 ms, 106 lines, SystemVerilog_2012] ...
-Loading (5) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv [7 ms, 104 lines, SystemVerilog_2012] ...
-Loading (6) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_pkg.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_pkg.sv [3 ms, 27 lines, SystemVerilog_2012] ...
-Loading (7) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/vga_timing/vga_timing_tb.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/vga_timing/vga_timing_tb.sv [20 ms, 120 lines, SystemVerilog_2012] ...
-Loading (8) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_timing.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_timing.sv [19 ms, 98 lines, SystemVerilog_2012] ...
-Loading (9) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/draw_bg.sv ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/draw_bg.sv [41 ms, 89 lines, SystemVerilog_2012] ...
-Loading (10) /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v ...
-Done /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v [13 ms, 85 lines, Verilog_2001] ...
-*** Done invocation #1 [526 ms] ***
-*** Done parsing [LT 217 ms, PT 526 ms] ***
-*** Total number of lines [1 255] ***
+Loading (1) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv [91 ms, 131 lines, SystemVerilog_2012] ...
+Loading (2) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_figures.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_figures.sv [21 ms, 49 lines, SystemVerilog_2012] ...
+Loading (3) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\top_vga.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\top_vga.sv [15 ms, 90 lines, SystemVerilog_2012] ...
+Loading (4) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\tiff_writer.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\tiff_writer.sv [189 ms, 405 lines, SystemVerilog_2012] ...
+Loading (5) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\top_fpga\top_fpga_tb.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\top_fpga\top_fpga_tb.sv [16 ms, 106 lines, SystemVerilog_2012] ...
+Loading (6) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\top_vga\top_vga_tb.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\top_vga\top_vga_tb.sv [30 ms, 104 lines, SystemVerilog_2012] ...
+Loading (7) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_pkg.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_pkg.sv [10 ms, 27 lines, SystemVerilog_2012] ...
+Loading (8) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\vga_timing\vga_timing_tb.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\vga_timing\vga_timing_tb.sv [68 ms, 120 lines, SystemVerilog_2012] ...
+Loading (9) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_timing.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_timing.sv [19 ms, 98 lines, SystemVerilog_2012] ...
+Loading (10) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_if.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_if.sv [11 ms, 98 lines, SystemVerilog_2012] ...
+Loading (11) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_bg.sv ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_bg.sv [6 ms, 89 lines, SystemVerilog_2012] ...
+Loading (12) C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v ...
+Done C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v [17 ms, 85 lines, Verilog_2001] ...
+*** Done invocation #1 [508 ms] ***
+*** Done parsing [LT 171 ms, PT 508 ms] ***
+*** Total number of lines [1 402] ***
 Performing post full build actions ...
-Performing post full build step 1 (SRI) [1 ms] ...
+Performing post full build step 1 (SRI) [2 ms] ...
 Performing post full build step 2 (RI) [1 ms] ...
-Performing post full build step 3 (RCP) [0 ms] ...
-*** Files summary [10 total, 10 unique, 0 optimized] ***
-*** Done SystemVerilog build [955 ms] ***
+Performing post full build step 3 (RCP) [2 ms] ...
+*** Files summary [12 total, 12 unique, 0 optimized] ***
+*** Done SystemVerilog build [1s.065ms] ***
 
 *** Start mixed mode extension build ***
-Performing mixed post full build step (VHDL - RU) [9 ms] ...
-Performing mixed post full build step (VHDL - RT) [907 ms] ...
-Performing mixed post full build step (VLOG - RI) [1 ms] ...
+Performing mixed post full build step (VHDL - RU) [17 ms] ...
+Performing mixed post full build step (VHDL - RT) [1295 ms] ...
+Performing mixed post full build step (VLOG - RI) [2 ms] ...
 *** Warning: UNSPECIFIED_TOP: Please specify a -top module/entity/configuration in the project build file
 *** Top design candidates: work.top_fpga_tb, work.top_vga_tb, work.vga_timing_tb
-Performing mixed post full build step (MIXED - ELAB) [731 ms] ...
-Performing mixed post full build step (MIXED - UNEL) [57 ms] ...
+Performing mixed post full build step (MIXED - ELAB) [654 ms] ...
+Performing mixed post full build step (MIXED - UNEL) [61 ms] ...
 *** Warning: UNDECLARED_MODULE: Module 'IBUF' is not declared
-    at line 56 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:56 [compile index 1]
+    at line 56 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv:56 [compile index 1]
 *** Warning: UNDECLARED_MODULE: Module 'MMCME2_BASE' is not declared
-    at line 61 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:61 [compile index 1]
+    at line 61 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv:61 [compile index 1]
 *** Warning: UNDECLARED_MODULE: Module 'BUFH' is not declared
-    at line 86 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:86 [compile index 1]
+    at line 86 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv:86 [compile index 1]
 *** Warning: UNDECLARED_MODULE: Module 'BUFGCE' is not declared
-    at line 94 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:94 [compile index 1]
+    at line 94 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv:94 [compile index 1]
 *** Warning: UNDECLARED_MODULE: Module 'ODDR' is not declared
-    at line 105 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:105 [compile index 1]
+    at line 105 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv:105 [compile index 1]
 *** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'frame_number' in sequential logic (use non-blocking assignment)
-    at line 401 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/tiff_writer.sv:401 [compile index 3]
+    at line 401 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\tiff_writer.sv:401 [compile index 4]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'micro_idle' is not declared
+    at line 45 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_figures.sv:45 [compile index 2]
+*** Warning: UNELABORATED_MODULE: Module 'work.draw_figures' is not elaborated
+    at line 10 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_figures.sv:10 [compile index 2]
+*** Warning: UNELABORATED_MODULE: Module 'work.vga_timing' is not elaborated
+    at line 10 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_timing.sv:10 [compile index 9]
 *** Warning: UNELABORATED_MODULE: Module 'work.glbl' is not elaborated
-    at line 6 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:6 [compile index 10]
-Performing mixed post full build step (VHDL - RD) [7 ms] ...
+    at line 6 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:6 [compile index 12]
+Performing mixed post full build step (VHDL - RD) [10 ms] ...
 Performing mixed post full build step (VHDL - US) [0 ms] ...
-Performing mixed post full build step (VHDL - USBD) [75 ms] ...
-Performing mixed post full build step (VLOG - RD) [7 ms] ...
-Performing mixed post full build step (VLOG - US) [237 ms] ...
+Performing mixed post full build step (VHDL - USBD) [56 ms] ...
+Performing mixed post full build step (VLOG - RD) [11 ms] ...
+Performing mixed post full build step (VLOG - US) [184 ms] ...
+*** Warning: DUPLICATE_MODULE: Duplicate module 'vga_timing', already declared
+    at line 10 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_timing.sv
+    at line 10 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\vga_if.sv:10 [compile index 10]
 *** Warning: INTERNAL_GENERATED_CLOCK: Clock signal 'clk_ss' is not an input port
-    at line 91 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:91 [compile index 1]
+    at line 91 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\fpga\rtl\top_vga_basys3.sv:91 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'rgb_nxt' is never used
+    at line 26 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_figures.sv:26 [compile index 2]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'fire_figure' is never written
+    at line 31 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_figures.sv:31 [compile index 2]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'water_figure' is never written
+    at line 32 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\draw\draw_figures.sv:32 [compile index 2]
 *** Warning: SIGNAL_NEVER_READ: Signal 'vcount_bg' is never read (connected to sub-instance output port)
-    at line 38 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/top_vga.sv:38 [compile index 2]
+    at line 38 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\top_vga.sv:38 [compile index 3]
 *** Warning: SIGNAL_NEVER_READ: Signal 'hcount_bg' is never read (connected to sub-instance output port)
-    at line 38 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/top_vga.sv:38 [compile index 2]
+    at line 38 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\top_vga.sv:38 [compile index 3]
 *** Warning: SIGNAL_NEVER_READ: Signal 'vblnk_bg' is never read (connected to sub-instance output port)
-    at line 40 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/top_vga.sv:40 [compile index 2]
+    at line 40 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\top_vga.sv:40 [compile index 3]
 *** Warning: SIGNAL_NEVER_READ: Signal 'hblnk_bg' is never read (connected to sub-instance output port)
-    at line 40 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/top_vga.sv:40 [compile index 2]
+    at line 40 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\rtl\top_vga.sv:40 [compile index 3]
 *** Warning: INTERNAL_GENERATED_RESET: Reset signal 'file_open' is not an input port
-    at line 388 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/tiff_writer.sv:388 [compile index 3]
+    at line 388 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\tiff_writer.sv:388 [compile index 4]
 *** Warning: MULTIPLE_CLOCKS_BLOCK: Procedural block driven by multiple clocks (go_delayed, go)
-    at line 395 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/tiff_writer.sv:395 [compile index 3]
+    at line 395 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\tiff_writer.sv:395 [compile index 4]
 *** Warning: SIGNAL_NEVER_READ: Signal 'hs' is never read (connected to sub-instance output port)
-    at line 41 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv:41 [compile index 4]
+    at line 41 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\top_fpga\top_fpga_tb.sv:41 [compile index 5]
 *** Warning: SIGNAL_NEVER_READ: Signal 'hs' is never read (connected to sub-instance output port)
-    at line 40 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv:40 [compile index 5]
+    at line 40 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\top_vga\top_vga_tb.sv:40 [compile index 6]
 *** Warning: SIGNAL_NEVER_READ: Signal 'GSR' is never read
-    at line 14 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:14 [compile index 10]
+    at line 14 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:14 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'GTS' is never read
-    at line 15 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:15 [compile index 10]
+    at line 15 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:15 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'GWE' is never used
-    at line 16 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:16 [compile index 10]
+    at line 16 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:16 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'PRLD' is never read
-    at line 17 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:17 [compile index 10]
+    at line 17 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:17 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'GRESTORE' is never read
-    at line 18 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:18 [compile index 10]
+    at line 18 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:18 [compile index 12]
 *** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p_up_tmp' is never written
-    at line 19 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:19 [compile index 10]
+    at line 19 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:19 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'PLL_LOCKG' is never read
-    at line 20 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:20 [compile index 10]
+    at line 20 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:20 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'PROGB_GLBL' is never used
-    at line 22 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:22 [compile index 10]
+    at line 22 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:22 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'CCLKO_GLBL' is never used
-    at line 23 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:23 [compile index 10]
+    at line 23 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:23 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'FCSBO_GLBL' is never used
-    at line 24 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:24 [compile index 10]
+    at line 24 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:24 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'DO_GLBL' is never used
-    at line 25 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:25 [compile index 10]
+    at line 25 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:25 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'DI_GLBL' is never used
-    at line 26 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:26 [compile index 10]
+    at line 26 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:26 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TDO_GLBL' is never used
-    at line 34 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:34 [compile index 10]
+    at line 34 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:34 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TCK_GLBL' is never used
-    at line 35 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:35 [compile index 10]
+    at line 35 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:35 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TDI_GLBL' is never used
-    at line 36 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:36 [compile index 10]
+    at line 36 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:36 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TMS_GLBL' is never used
-    at line 37 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:37 [compile index 10]
+    at line 37 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:37 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TRST_GLBL' is never used
-    at line 38 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:38 [compile index 10]
+    at line 38 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:38 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_CAPTURE_GLBL' is never used
-    at line 40 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:40 [compile index 10]
+    at line 40 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:40 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_RESET_GLBL' is never used
-    at line 41 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:41 [compile index 10]
+    at line 41 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:41 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_SHIFT_GLBL' is never used
-    at line 42 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:42 [compile index 10]
+    at line 42 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:42 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_UPDATE_GLBL' is never used
-    at line 43 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:43 [compile index 10]
+    at line 43 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:43 [compile index 12]
 *** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_RUNTEST_GLBL' is never used
-    at line 44 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:44 [compile index 10]
+    at line 44 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:44 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL1_GLBL' is never read
-    at line 46 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:46 [compile index 10]
+    at line 46 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:46 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL2_GLBL' is never read
-    at line 47 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:47 [compile index 10]
+    at line 47 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:47 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL3_GLBL' is never read
-    at line 48 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:48 [compile index 10]
+    at line 48 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:48 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL4_GLBL' is never read
-    at line 49 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:49 [compile index 10]
+    at line 49 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:49 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO1_GLBL' is never read
-    at line 51 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:51 [compile index 10]
+    at line 51 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:51 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO2_GLBL' is never read
-    at line 52 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:52 [compile index 10]
+    at line 52 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:52 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO3_GLBL' is never read
-    at line 53 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:53 [compile index 10]
+    at line 53 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:53 [compile index 12]
 *** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO4_GLBL' is never read
-    at line 54 in /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/common/glbl.v:54 [compile index 10]
-*** Done mixed mode extension build [2s.118ms] ***
-*** Total build time [5s.009ms] ***
+    at line 54 in C:\Users\gniad_yywakj6\OneDrive\Pulpit\gra UEC\UEC2_projekt_2025\sim\common\glbl.v:54 [compile index 12]
+*** Done mixed mode extension build [2s.339ms] ***
+*** Total build time [4s.776ms] ***
