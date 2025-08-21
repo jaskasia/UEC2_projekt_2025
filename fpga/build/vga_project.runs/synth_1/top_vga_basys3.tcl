@@ -86,10 +86,13 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_pkg.sv
   /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/draw_bg.sv
+  /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/draw_rect.sv
   /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/top_vga.sv
+  /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_if.sv
   /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/rtl/vga_timing.sv
   /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv
 }
+read_verilog -library xil_defaultlib /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/rtl/clk_wiz_0_clk_wiz.v
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -101,6 +104,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 read_xdc /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc
 set_property used_in_implementation false [get_files /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]
+
+read_xdc /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/constraints/clk_wiz_0.xdc
+set_property used_in_implementation false [get_files /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/constraints/clk_wiz_0.xdc]
+
+read_xdc /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/constraints/clk_wiz_0_late.xdc
+set_property used_in_implementation false [get_files /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/fpga/constraints/clk_wiz_0_late.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

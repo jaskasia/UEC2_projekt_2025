@@ -39,6 +39,7 @@ set sv_files {
     ../rtl/top_vga.sv
     ../rtl/draw_rect.sv
     ../rtl/move_ctr_fsm.sv
+    ../rtl/vga_if.sv
     ../rtl/keyboard/keyboard_ctl.sv
     rtl/top_vga_basys3.sv
 }
