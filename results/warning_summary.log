@@ -1,9 +1,13 @@
 Warnings, critical warnings and errors from synthesis and implementation
 
-Created: 2025-09-01 14:54:28
+Created: 2025-09-01 23:03:49
 
 ----SYNTHESIS----
+WARNING: [Synth 8-6014] Unused sequential element end_game_reg was removed.  [rtl/top_vga.sv:43]
+WARNING: [Synth 8-3848] Net data_ in module/entity top_vga_basys3 does not have driver. [fpga/rtl/top_vga_basys3.sv:74]
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (u_uart/uart_rx_unit/FSM_sequential_state_reg_reg[1]) is unused and will be removed from module top_uart.
+WARNING: [Synth 8-3332] Sequential element (u_uart/uart_rx_unit/FSM_sequential_state_reg_reg[0]) is unused and will be removed from module top_uart.
 
 ----IMPLEMENTATION----
 CLEAR :)

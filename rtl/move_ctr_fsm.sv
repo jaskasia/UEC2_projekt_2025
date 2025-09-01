@@ -62,7 +62,7 @@ module move_ctr_fsm (
         if (rst) begin
             state        <= STAND;
             pos_x        <= 12'd100;
-            pos_y        <= 12'd500;
+            pos_y        <= 12'd533;
             y_jump_start <= 12'd500;
         end else begin
             state        <= state_nxt;
@@ -90,7 +90,7 @@ module move_ctr_fsm (
             end
  
             FALL: begin
-                if (pos_y >= y_jump_start)
+                if ( pos_y == y_jump_start - 83) //83 = wysokość platformy + przestrzeń nad nią
                     state_nxt = STAND;
             end
  
@@ -121,6 +121,11 @@ module move_ctr_fsm (
                 end else if (key_d) begin
                     pos_x_nxt = (pos_x < HOR_PIXELS - HOR_SPEED) ? pos_x + HOR_SPEED : pos_x;
                     y_jump_start_nxt = y_jump_start;
+                end
+                else if(key_w) begin
+                //    pos_y_nxt = (pos_y > 0) ? pos_y - 1 : pos_y;
+                    y_jump_start_nxt = pos_y; // ustawienie punktu startowego skoku
+                
                 end else begin
                     pos_x_nxt = pos_x;
                     y_jump_start_nxt = y_jump_start;

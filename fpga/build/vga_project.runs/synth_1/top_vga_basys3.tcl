@@ -91,6 +91,7 @@ read_verilog -library xil_defaultlib -sv {
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_screens.sv
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/move_ctr_fsm.sv
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv
+  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_uart.sv
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_vga.sv
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_timing.sv
@@ -101,6 +102,11 @@ read_verilog -library xil_defaultlib {
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v
   /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/debouncer.v
+  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v
+  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v
+  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v
+  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v
+  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

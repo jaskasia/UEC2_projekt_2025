@@ -71,7 +71,7 @@ top_vga u_top_vga (
     .ps2_data(PS2Data),
     .data_out(data_vga),
     .data_ready(data_ready),
-    .data_in(data_uart)
+    .data_in(data_)
 );
 
 
