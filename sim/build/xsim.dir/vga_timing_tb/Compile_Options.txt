@@ -1,1 +1,1 @@
-"work.vga_timing_tb" -snapshot "vga_timing_tb" -prj "/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/vga_timing/vga_timing.prj" -timescale "1ns/1ps" -L "unisims_ver" -standalone -runall 
+"work.vga_timing_tb" -snapshot "vga_timing_tb" -prj "/student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/sim/vga_timing/vga_timing.prj" -timescale "1ns/1ps" -L "unisims_ver" -standalone -runall 

@@ -24,21 +24,21 @@
 
     timeunit 1ns;
     timeprecision 1ps;
-
+    import vga_pkg::*;
     /**
      *  Local parameters
      */
 
-    localparam CLK_PERIOD = 25;     // 40 MHz
-    localparam CLK_PERIOD_100 = 10;     // 100 MHz
+    localparam CLK_PERIOD = 15.38;     // 65 MHz
+
+
 
     /**
      * Local variables and signals
      */
 
-    logic clk100MHz, clk40MHz, rst;
+    logic clk, clk6, rst;
     wire vs, hs;
-    wire ps2_data, ps2_clk;
     wire [3:0] r, g, b;
 
 
@@ -47,38 +47,34 @@
      */
 
     initial begin
-        clk40MHz = 1'b0;
-        forever #(CLK_PERIOD/2) clk40MHz = ~clk40MHz;
+        clk = 1'b0;
+        forever #(CLK_PERIOD/2) clk = ~clk;
     end
 
-    initial begin
-        clk100MHz = 1'b0;
-        forever #(CLK_PERIOD_100/2) clk100MHz = ~clk100MHz;
-    end
 
     /**
      * Submodules instances
      */
 
     top_vga dut (
-        .clk40MHz(clk40MHz),
-        .clk100MHz(clk100MHz),
+        .clk65MHz(clk),
         .rst(rst),
         .vs(vs),
         .hs(hs),
         .r(r),
         .g(g),
         .b(b),
-        .ps2_clk(ps2_clk),
-        .ps2_data(ps2_data)
+        .ps2_clk(),
+        .ps2_data()
     );
 
     tiff_writer #(
-        .XDIM(16'd1056),
-        .YDIM(16'd628),
+        .XDIM(HOR_TOTAL_TIME),
+        .YDIM(VER_TOTAL_TIME),
+        
         .FILE_DIR("../../results")
     ) u_tiff_writer (
-        .clk(clk40MHz),
+        .clk(clk),
         .r({r,r}), // fabricate an 8-bit value
         .g({g,g}), // fabricate an 8-bit value
         .b({b,b}), // fabricate an 8-bit value
@@ -95,9 +91,11 @@
         # 30 rst = 1'b1;
         # 30 rst = 1'b0;
 
+        
         $display("If simulation ends before the testbench");
         $display("completes, use the menu option to run all.");
         $display("Prepare to wait a long time...");
+
 
         wait (vs == 1'b0);
         @(negedge vs) $display("Info: negedge VS at %t",$time);

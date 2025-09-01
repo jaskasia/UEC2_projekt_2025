@@ -1,29 +1,9 @@
 Warnings, critical warnings and errors from synthesis and implementation
 
-Created: 2025-08-07 20:29:41
+Created: 2025-09-01 13:02:44
 
 ----SYNTHESIS----
-WARNING: [Synth 8-3848] Net tim_bg\.rgb in module/entity top_vga does not have driver. [rtl/vga_if.sv:8]
-WARNING: [Synth 8-7129] Port in\.rgb[11] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[10] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[9] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[8] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[7] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[6] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[5] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[4] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[3] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[2] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[1] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in\.rgb[0] in module draw_bg is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ps2_clk in module top_vga is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ps2_data in module top_vga is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk100MHz in module top_vga is either unconnected or has no load
-CRITICAL WARNING: [Constraints 18-1056] Clock 'clk' completely overrides clock 'sys_clk_pin'.
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port PS2Clk in module top_vga_basys3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PS2Data in module top_vga_basys3 is either unconnected or has no load
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 
 ----IMPLEMENTATION----
-CRITICAL WARNING: [Constraints 18-1056] Clock 'clk' completely overrides clock 'sys_clk_pin'.
+CLEAR :)
