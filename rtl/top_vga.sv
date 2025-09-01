@@ -1,20 +1,20 @@
-/**
- * San Jose State University
- * EE178 Lab #4
- * Author: prof. Eric Crabilla
- *
- * Modified by:
- * 2025  AGH University of Science and Technology
- * MTM UEC2
- * Piotr Kaczmarczyk
- *
- * Description:
- * The project top module.
- */
+/*
+* Authors:
+* * 2025  AGH University of Science and Technology
+* MTM UEC2 Ogień i Woda Infinity Tower
+* Aleksandra Gniadek and Joanna Jaśkowiec
+*
+* Description:
+* Game top module connecting all the sub-modules to the clock and together
+*/
+
 
 module top_vga (
-        input  logic clk,
+        input  logic clk65MHz,
         input  logic rst,
+        input  wire ps2_clk,
+        input  wire ps2_data,
+
         output logic vs,
         output logic hs,
         output logic [3:0] r,
@@ -22,68 +22,96 @@ module top_vga (
         output logic [3:0] b
     );
 
-    timeunit 1ns;
-    timeprecision 1ps;
+    logic [7:0] rx_data;
+    logic o_flag;
+    logic key_jump, key_left, key_right;
 
-    /**
-     * Local variables and signals
-     */
+    PS2Receiver ps2_receiver_inst (
+        .clk(clk65MHz),
+        .kclk(ps2_clk),
+        .kdata(ps2_data),
+        .keycode(rx_data),
+        .oflag(o_flag)
+    );
 
-    // VGA signals from timing
-    wire [10:0] vcount_tim, hcount_tim;
-    wire vsync_tim, hsync_tim;
-    wire vblnk_tim, hblnk_tim;
+    read_keyboard read_keyboard_inst (
+        .clk(clk65MHz),
+        .rst(rst),
+        .keycode(rx_data),
+        .oflag(o_flag),
+        .newchar(),
+        .enter(key_enter),
+        .spacebar(key_space),
+        .key_w(key_jump),
+        .key_a(key_left),
+        .key_d(key_right)
+    );
 
-    // VGA signals from background
-    wire [10:0] vcount_bg, hcount_bg;
-    wire vsync_bg, hsync_bg;
-    wire vblnk_bg, hblnk_bg;
-    wire [11:0] rgb_bg;
+    logic [11:0] rect_posx, rect_posy;
+    move_ctr_fsm player_ctl_inst (
+        .clk(clk65MHz),
+        .rst(rst),
+        .key_w(key_jump),
+        .key_a(key_left),
+        .key_d(key_right),
+        .pos_x(rect_posx),
+        .pos_y(rect_posy)
+    );
 
-
-    /**
-     * Signals assignments
-     */
-
-    assign vs = vsync_bg;
-    assign hs = hsync_bg;
-    assign {r,g,b} = rgb_bg;
-
-
-    /**
-     * Submodules instances
-     */
+    vga_if tim_bg();
+    vga_if bg_platform();
+    vga_if platform_figures();
+    vga_if draw_figures_out();
 
     vga_timing u_vga_timing (
-        .clk,
+        .clk(clk65MHz),
         .rst,
-        .vcount (vcount_tim),
-        .vsync  (vsync_tim),
-        .vblnk  (vblnk_tim),
-        .hcount (hcount_tim),
-        .hsync  (hsync_tim),
-        .hblnk  (hblnk_tim)
+        .vcount(tim_bg.vcount),
+        .vsync(tim_bg.vsync),
+        .vblnk(tim_bg.vblnk),
+        .hcount(tim_bg.hcount),
+        .hsync(tim_bg.hsync),
+        .hblnk(tim_bg.hblnk)
+    );
+
+    // ---------- ekran startowy ----------
+    logic [11:0] rgb_start;
+    draw_screens u_draw_screens (
+        .clk(clk65MHz),
+        .rst(rst),
+        .key_enter(key_enter),
+        .key_space(key_space),
+        .hcount(tim_bg.hcount),
+        .vcount(tim_bg.vcount),
+        .rgb_start(rgb_start)
     );
 
     draw_bg u_draw_bg (
-        .clk,
+        .clk(clk65MHz),
         .rst,
-
-        .vcount_in  (vcount_tim),
-        .vsync_in   (vsync_tim),
-        .vblnk_in   (vblnk_tim),
-        .hcount_in  (hcount_tim),
-        .hsync_in   (hsync_tim),
-        .hblnk_in   (hblnk_tim),
-
-        .vcount_out (vcount_bg),
-        .vsync_out  (vsync_bg),
-        .vblnk_out  (vblnk_bg),
-        .hcount_out (hcount_bg),
-        .hsync_out  (hsync_bg),
-        .hblnk_out  (hblnk_bg),
-
-        .rgb_out    (rgb_bg)
+        .in(tim_bg.in),
+        .out(bg_platform.out)
     );
+
+    draw_platforms u_draw_platforms (
+        .clk(clk65MHz),
+        .in(bg_platform.in),
+        .out(platform_figures.out)
+    );
+
+    draw_figures u_draw_figures (
+        .clk(clk65MHz),
+        .rect_posx(rect_posx),
+        .rect_posy(rect_posy),
+        .in(platform_figures.in),
+        .out(draw_figures_out.out)
+    );
+
+    logic [11:0] rgb_mux;
+    assign rgb_mux = rgb_start != 12'h000 ? rgb_start : draw_figures_out.rgb;
+
+    assign vs = draw_figures_out.vsync;
+    assign hs = draw_figures_out.hsync;
+    assign {r,g,b} = rgb_mux;
 
 endmodule

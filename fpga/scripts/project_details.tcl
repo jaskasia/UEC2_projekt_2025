@@ -27,25 +27,34 @@ set target xc7a35tcpg236-1
 # Specify .xdc files location                   -- EDIT
 set xdc_files {
     constraints/top_vga_basys3.xdc
+    constraints/clk_wiz_project.xdc
 }
 
 # Specify SystemVerilog design files location   -- EDIT
 set sv_files {
     ../rtl/vga_pkg.sv
     ../rtl/vga_timing.sv
-    ../rtl/draw_bg.sv
+    ../rtl/draw/draw_bg.sv
+    ../rtl/draw/draw_figures.sv
+    ../rtl/draw/draw_platforms.sv
+    ../rtl/draw/draw_screens.sv
     ../rtl/top_vga.sv
+    ../rtl/move_ctr_fsm.sv
+    ../rtl/vga_if.sv
+    ../rtl/keyboard/read_keyboard.sv
     rtl/top_vga_basys3.sv
 }
 
 # Specify Verilog design files location         -- EDIT
-# set verilog_files {
-#     path/to/file.v
-# }
+set verilog_files {
+    ../fpga/rtl/clk_wiz_project.v
+    ../fpga/rtl/clk_wiz_project_clk_wiz.v
+    ../rtl/keyboard/debouncer.v
+    ../rtl/keyboard/PS2Receiver.v
+}
 
 # Specify VHDL design files location            -- EDIT
 # set vhdl_files {
-#    path/to/file.vhd
 # }
 
 # Specify files for a memory initialization     -- EDIT

@@ -1,7 +1,4 @@
-Running: xsim.dir/vga_timing_tb/xsimk -simmode gui -wdb vga_timing_tb.wdb -simrunnum 0 -socket 44603
+Running: xsim.dir/vga_timing_tb/axsim vga_timing_tb -runall
 Design successfully loaded
-Design Loading Memory Usage: 42988 KB (Peak: 42988 KB)
-Design Loading CPU Usage: 20 ms
-Simulation completed
-Simulation Memory Usage: 124988 KB (Peak: 182260 KB)
-Simulation CPU Usage: 4870 ms
+Design Loading Memory Usage: 31712 KB (Peak: 31832 KB)
+Design Loading CPU Usage: 1420 ms

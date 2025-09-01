@@ -2,16 +2,16 @@
 # xsim v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Tue Apr 29 21:15:46 2025
-# Process ID: 31971
-# Current directory: /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/build
-# Command line: xsim -source {xsim.dir/vga_timing_tb/xsim_script.tcl}
-# Log file: /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/build/xsim.log
-# Journal file: /home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/build/xsim.jou
-# Running On: cadence25, OS: Linux, CPU Frequency: 3600.195 MHz, CPU Physical cores: 4, Host memory: 16720 MB
+# Start of session at: Sun Aug 31 11:31:12 2025
+# Process ID: 7102
+# Current directory: /home/student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/sim/build
+# Command line: xsim -source {xsim.dir/move_ctr_fsm_tb/xsim_script.tcl}
+# Log file: /home/student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/sim/build/xsim.log
+# Journal file: /home/student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/sim/build/xsim.jou
+# Running On: cadence33, OS: Linux, CPU Frequency: 3899.804 MHz, CPU Physical cores: 4, Host memory: 16720 MB
 #-----------------------------------------------------------
 start_gui
-source xsim.dir/vga_timing_tb/xsim_script.tcl
+source xsim.dir/move_ctr_fsm_tb/xsim_script.tcl
 # set_param project.enableReportConfiguration 0
 # load_feature core
 # current_fileset
@@ -75,18 +75,96 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 availab
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home_local/Xilinx/Vivado/2021.2/data/ip'.
-current_fileset: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 10083.770 ; gain = 288.066 ; free physical = 376 ; free virtual = 12604
-# xsim {vga_timing_tb} -autoloadwcfg -tclbatch {/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/tools/sim_cmd.tcl}
+current_fileset: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 10081.273 ; gain = 285.062 ; free physical = 7730 ; free virtual = 18956
+# xsim {move_ctr_fsm_tb} -autoloadwcfg -tclbatch {/student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/tools/sim_cmd.tcl}
 Time resolution is 1 ps
-source /student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/tools/sim_cmd.tcl
+source /student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/tools/sim_cmd.tcl
 ## log_wave *      # top module signals only
 ## run all
-$finish called at time : 51061308 ns : File "/home/student/jjaskowiec/ogien_i_woda_infinity_tower/UEC2_projekt_2025/sim/vga_timing/vga_timing_tb.sv" Line 116
-run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 10270.613 ; gain = 2.000 ; free physical = 307 ; free virtual = 12578
+Time	pos_x	pos_y	State
+0	x	x
+8000	100	500
+=== Move right only ===
+=== Move left only ===
+=== Jump + Move right ===
+=== Jump + Move left ===
+=== Jump only ===
+Simulation complete.
+$finish called at time : 3760410 ps : File "/home/student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/sim/move_ctr_fsm/move_ctr_fsm_tb.sv" Line 88
 ## add_wave /      # top module signals only
-xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 10597.648 ; gain = 513.879 ; free physical = 220 ; free virtual = 12566
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/move_ctr_fsm_tb/dut/state}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/move_ctr_fsm_tb/on_platform}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/move_ctr_fsm_tb/ground_y}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Time	pos_x	pos_y	State
+0	x	x
+8000	100	500
+=== Move right only ===
+=== Move left only ===
+=== Jump + Move right ===
+=== Jump + Move left ===
+=== Jump only ===
+Simulation complete.
+$finish called at time : 3760410 ps : File "/home/student/jjaskowiec/Desktop/graTest/UEC2_projekt_2025/sim/move_ctr_fsm/move_ctr_fsm_tb.sv" Line 88
+run all
+2307069000	100	499
+4614069000	100	498
+6921069000	100	497
+9228069000	100	496
+11535069000	100	495
+13842069000	100	494
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 10655.145 ; gain = 0.000 ; free physical = 7463 ; free virtual = 18731
+run all
+16149069000	100	493
+18456069000	100	492
+20763069000	100	491
+23070069000	100	490
+25377069000	100	489
+27684069000	100	488
+29991069000	100	487
+32298069000	100	486
+34605069000	100	485
+36912069000	100	484
+39219069000	100	483
+41526069000	100	482
+43833069000	100	481
+46140069000	100	480
+48447069000	100	479
+50754069000	100	478
+53061069000	100	477
+55368069000	100	476
+57675069000	100	475
+59982069000	100	474
+62289069000	100	473
+64596069000	100	472
+66903069000	100	471
+69210069000	100	470
+71517069000	100	469
+73824069000	100	468
+76131069000	100	467
+78438069000	100	466
+80745069000	100	465
+83052069000	100	464
+85359069000	100	463
+87666069000	100	462
+89973069000	100	461
+92280069000	100	460
+94587069000	100	459
+96894069000	100	458
+99201069000	100	457
+101508069000	100	456
+run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:53 . Memory (MB): peak = 10655.145 ; gain = 0.000 ; free physical = 6930 ; free virtual = 18348
 close_sim
+INFO: xsimkernel Simulation Memory Usage: 518972 KB (Peak: 584508 KB), Simulation CPU Usage: 5260 ms
 INFO: [Simtcl 6-16] Simulation closed
 close_project
 exit
-INFO: [Common 17-206] Exiting xsim at Tue Apr 29 21:38:47 2025...
+INFO: [Common 17-206] Exiting xsim at Mon Sep  1 08:51:02 2025...

@@ -20,23 +20,24 @@
  * the difference between VER_SYNC_START and VER_TOTAL_TIME.
  */
 
-module top_vga_tb;
+ module top_vga_tb;
 
     timeunit 1ns;
     timeprecision 1ps;
-
+    import vga_pkg::*;
     /**
      *  Local parameters
      */
 
-    localparam CLK_PERIOD = 25;     // 40 MHz
+    localparam CLK_PERIOD = 15.38;     // 65 MHz
+
 
 
     /**
      * Local variables and signals
      */
 
-    logic clk, rst;
+    logic clk, clk6, rst;
     wire vs, hs;
     wire [3:0] r, g, b;
 
@@ -56,18 +57,21 @@ module top_vga_tb;
      */
 
     top_vga dut (
-        .clk(clk),
+        .clk65MHz(clk),
         .rst(rst),
         .vs(vs),
         .hs(hs),
         .r(r),
         .g(g),
-        .b(b)
+        .b(b),
+        .ps2_clk(),
+        .ps2_data()
     );
 
     tiff_writer #(
-        .XDIM(16'd1056),
-        .YDIM(16'd628),
+        .XDIM(HOR_TOTAL_TIME),
+        .YDIM(VER_TOTAL_TIME),
+        
         .FILE_DIR("../../results")
     ) u_tiff_writer (
         .clk(clk),
@@ -87,9 +91,11 @@ module top_vga_tb;
         # 30 rst = 1'b1;
         # 30 rst = 1'b0;
 
+        
         $display("If simulation ends before the testbench");
         $display("completes, use the menu option to run all.");
         $display("Prepare to wait a long time...");
+
 
         wait (vs == 1'b0);
         @(negedge vs) $display("Info: negedge VS at %t",$time);

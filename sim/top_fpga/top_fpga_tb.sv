@@ -63,8 +63,8 @@ module top_fpga_tb;
         .Hsync(hs),
         .vgaRed(r),
         .vgaGreen(g),
-        .vgaBlue(b),
-        .JA1(pclk)
+        .vgaBlue(b)
+ //       .JA1(pclk)
     );
 
     tiff_writer #(
