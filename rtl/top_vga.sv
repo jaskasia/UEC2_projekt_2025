@@ -28,7 +28,70 @@ module top_vga (
     logic [7:0] rx_data;
     logic o_flag;
     logic key_jump, key_left, key_right;
- 
+    logic [1:0] start_game;
+    logic [7:0] data_in_prev;
+    logic [1:0] game_mode; //x0 - fire, x1 - water
+    logic end_game;
+    logic end_game_fail;
+
+//odbieranie danych 
+    always_ff @(posedge clk65MHz) begin
+        if (rst) begin
+     //       data_out <= 8'b0;
+            start_game <= 2'b0;
+            data_in_prev <= 8'b0;
+            end_game <= 1'b0;
+         //   data_ready <= 1'b0;
+        end else begin
+            if (data_in != data_in_prev) begin
+                if (data_in == 8'h30) begin //zacznij grę jako ogień 
+                    start_game <= 2'b10;
+
+                end else if (data_in == 8'h31) begin //zacznij grę jako woda
+                    start_game <= 2'b11;
+
+                end else if (data_in == 8'h32) begin //skończ grę
+                    end_game <= 1'b1;
+                
+                end else begin 
+                    start_game[1] <= 1'b0;
+                end
+                data_in_prev <= data_in;
+        //        data_ready <= 1'b1;
+            end else begin
+            //    data_ready <= 1'b0;
+                
+            end
+        end
+    end
+
+//wysyłanie danych 
+    always_ff @(posedge clk65MHz) begin
+        if (rst) begin
+            data_out <= 8'b0;
+            data_ready <= 1'b0;
+            game_mode <= 2'b0;
+        end else begin
+            if (end_game_fail) begin
+                
+                    data_out <= 8'h32; //przegrana
+                    data_ready <= 1'b1;
+
+            end else if (key_space) begin
+                data_out <= 8'h30; //gra rozpoczęta jako ogień na drugim ekranie
+                data_ready <= 1'b1;
+                game_mode <= 2'b11; //ustawienie trybu gry na woda
+            end else if (key_enter) begin
+                data_out <= 8'h31; //gra rozpoczęta jako woda
+                data_ready <= 1'b1;
+                game_mode <= 2'b10; //ustawienie trybu gry na ogień
+            end else begin
+                data_ready <= 1'b0;
+                data_out <= 8'b0;
+            end
+        end
+    end
+
     PS2Receiver ps2_receiver_inst (
         .clk(clk65MHz),
         .kclk(ps2_clk),
@@ -88,7 +151,8 @@ module top_vga (
         .key_space(key_space),
         .hcount(tim_bg.hcount),
         .vcount(tim_bg.vcount),
-        .rgb_start(rgb_start)
+        .rgb_start(rgb_start),
+        .start_game(start_game[1])
     );
  
 
@@ -112,7 +176,9 @@ module top_vga (
         .rect_posx(rect_posx),
         .rect_posy(rect_posy),
         .in(platform_figures.in),
-        .out(draw_figures_out.out)
+        .out(draw_figures_out.out),
+        .start_game(start_game[0]),
+        .game_mode
     );
  
 
