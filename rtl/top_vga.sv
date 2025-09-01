@@ -152,7 +152,8 @@ module top_vga (
         .hcount(tim_bg.hcount),
         .vcount(tim_bg.vcount),
         .rgb_start(rgb_start),
-        .start_game(start_game[1])
+        .start_game(start_game[1]),
+        .lose(end_game_fail)
     );
  
 
@@ -178,7 +179,8 @@ module top_vga (
         .in(platform_figures.in),
         .out(draw_figures_out.out),
         .start_game(start_game[0]),
-        .game_mode
+        .game_mode,
+        .lose(end_game_fail)
     );
  
 

@@ -62,7 +62,7 @@ module move_ctr_fsm (
         if (rst) begin
             state        <= STAND;
             pos_x        <= 12'd100;
-            pos_y        <= 12'd500;
+            pos_y        <= 12'd533;
             y_jump_start <= 12'd500;
         end else begin
             state        <= state_nxt;
@@ -90,7 +90,7 @@ module move_ctr_fsm (
             end
  
             FALL: begin
-                if ( pos_y == y_jump_start - 83)
+                if ( pos_y == y_jump_start - 83) //83 = wysokość platformy + przestrzeń nad nią
                     state_nxt = STAND;
             end
  

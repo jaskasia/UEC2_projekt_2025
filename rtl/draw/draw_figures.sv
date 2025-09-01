@@ -8,26 +8,24 @@
  * Draws figures (sprites) on the screen using pixel data from .dat files.
  */
 
-module draw_figures (
-        input  logic clk, rst,
-        input  logic [11:0] rect_posx,   // pozycja X figury na ekranie
-        input  logic [11:0] rect_posy,   // pozycja Y figury na ekranie
-        input logic [1:0] game_mode, // tryb gry: x0 - ogień, x1 - woda
-        input logic start_game,
+ module draw_figures (
+    input  logic clk, rst,
+    input  logic [11:0] rect_posx,
+    input  logic [11:0] rect_posy,
+    input  logic [1:0] game_mode,
+    input  logic start_game,
 
-    //    output logic lose,
+    output logic lose,
 
-        vga_if.in  in,
-        vga_if.out out
-    );
+    vga_if.in  in,
+    vga_if.out out
+);
 
-
-    // sprite: ogień (26x26 = 676 pikseli)
+    // sprite: ogień (26x26)
     reg [11:0] fire_figure [0:675];
-    // sprite: woda (26x26 = 676 pikseli)
+    // sprite: woda (26x26)
     reg [11:0] water_figure [0:675];
     reg [11:0] figure [0:675];
-
 
     initial begin
         $readmemh("../../rtl/graphics/fire_figure.dat",  fire_figure);
@@ -39,33 +37,24 @@ module draw_figures (
     parameter WATER_WIDTH  = 26;
     parameter WATER_HEIGHT = 26;
     parameter BG_COLOR     = 12'h452;
-   // parameter WATER_COLOR  = 12'hCFF; // kolor wody
-   // parameter FIRE_COLOR   = 12'hF17; // kolor ognia
-    
-    
-   // logic [3:0] color = 12'hF_F_F; // kolor platformy kolizyjnej
+    parameter WATER_COLOR  = 12'hCFF;
+    parameter FIRE_COLOR   = 12'hF17;
 
-   /*  always_comb begin
-        if (game_mode[1]) begin
-            color = (game_mode[0]) ? WATER_COLOR : FIRE_COLOR;
-        end
-        else  begin
-            color = (start_game) ? WATER_COLOR : FIRE_COLOR;
-        end
-    end
-*/
+    logic [3:0] color; // kolor kolizji
+
     always_comb begin
         if (game_mode[1]) begin
+            color = (game_mode[0]) ? WATER_COLOR : FIRE_COLOR;
             figure = (game_mode[0]) ? water_figure : fire_figure;
-        end
-        else  begin
+        end else begin
+            color = (start_game) ? WATER_COLOR : FIRE_COLOR;
             figure = (start_game) ? water_figure : fire_figure;
         end
     end
 
+    // zatrzask przegranej
     always_ff @(posedge clk) begin
-        // przepuszczamy sygnały synchronizacji
-        if(rst) begin
+        if (rst) begin
             out.hcount <= '0;
             out.vcount <= '0;
             out.hsync  <= '0;
@@ -73,8 +62,9 @@ module draw_figures (
             out.hblnk  <= '0;
             out.vblnk  <= '0;
             out.rgb    <= '0;
- //           lose <= '0;
+            lose      <= 1'b0;
         end else begin
+            // kopiujemy sygnały synchronizacji i tła
             out.hcount <= in.hcount;
             out.vcount <= in.vcount;
             out.hsync  <= in.hsync;
@@ -83,11 +73,9 @@ module draw_figures (
             out.vblnk  <= in.vblnk;
             out.rgb    <= in.rgb;
 
-
-
-
+           
             if ((in.hcount >= rect_posx) && (in.hcount < rect_posx + FIRE_WIDTH*2) &&
-                    (in.vcount >= rect_posy) && (in.vcount < rect_posy + FIRE_HEIGHT*2)) begin
+                (in.vcount >= rect_posy) && (in.vcount < rect_posy + FIRE_HEIGHT*2)) begin
 
                 int local_x = (in.hcount - rect_posx) >> 1;
                 int local_y = (in.vcount - rect_posy) >> 1;
@@ -95,17 +83,14 @@ module draw_figures (
 
                 if (sprite_addr < 676 && figure[sprite_addr] != BG_COLOR) begin
                     out.rgb <= figure[sprite_addr];
-                end
-                // warunek przegranej - kolizja z tłem
-              /*  if (figure[sprite_addr] == color && !in.hblnk && !in.vblnk) begin
-                    lose <= 1'b1;
-                end
-                else begin
-                    lose <= 1'b0;
-                end*/
-            end
 
+                    
+                    if (!in.hblnk && !in.vblnk && in.rgb == color) begin
+                        lose <= 1'b1; 
+                    end
+                end
+            end
         end
     end
-
 endmodule
+
