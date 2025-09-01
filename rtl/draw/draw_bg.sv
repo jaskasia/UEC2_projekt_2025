@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 * Authors:
 * * 2025  AGH University of Science and Technology
@@ -10,8 +9,6 @@
 */
 
 
-=======
->>>>>>> origin/main
 module draw_bg (
         input  logic clk,
         input  logic rst,
@@ -69,12 +66,8 @@ module draw_bg (
                 rgb_nxt = 12'h0_f_0;                // - - make a green line.
             else if (in.hcount == HOR_PIXELS - 1)   // - right edge:
                 rgb_nxt = 12'h0_0_f;                // - - make a blue line.
-<<<<<<< HEAD
             else if (in.rgb != 12'h000)              // <-- jeśli coś przyszło z poprzedniego modułu
                 rgb_nxt = in.rgb;  
-=======
-
->>>>>>> origin/main
 
             else                                    // The rest of active display pixels:
                 rgb_nxt = 12'h4_5_2;                // - fill with olive.
