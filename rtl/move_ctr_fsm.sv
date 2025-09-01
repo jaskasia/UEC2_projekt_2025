@@ -12,22 +12,22 @@
 module move_ctr_fsm (
     input  logic        clk,
     input  logic        rst,
-    input  logic        key_w,       // skok - przycisk "w" (impuls)
-    input  logic        key_a,       // ruch w lewo - przycisk "a" (impuls)
-    input  logic        key_d,       // ruch w prawo - przycisk "d" (impuls)
+    input  logic        key_w,       // skok - przycisk "w" 
+    input  logic        key_a,       // ruch w lewo - przycisk "a" 
+    input  logic        key_d,       // ruch w prawo - przycisk "d" 
  
-    output logic [11:0] pos_x,       // pozycja X postaci
-    output logic [11:0] pos_y        // pozycja Y postaci
+    output logic [11:0] pos_x,       
+    output logic [11:0] pos_y        
 );
     import vga_pkg::*;
 
-    // --- Stałe gry ---
+
     localparam HOR_SPEED   = 3;         
     localparam JUMP_HEIGHT = 100;       
     localparam COUNTER_HOR = 10000;    
     localparam COUNTER_VER = 150000;   
  
-    // --- Stany FSM ---
+
     typedef enum logic [2:0] {
         STAND      = 3'b000,
         JUMP       = 3'b001,

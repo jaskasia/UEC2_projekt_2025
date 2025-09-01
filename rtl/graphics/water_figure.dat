@@ -1,5 +1,4 @@
 // image rom content of: water_figure.png
-<<<<<<< HEAD
 // WIDTH = 26
 // HEIGHT = 26
 452
@@ -93,81 +92,10 @@
 452
 452
 452
-=======
-// WIDTH = 19
-// HEIGHT = 26
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-699
-699
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-699
-9DE
-699
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 699
 9DE
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -189,29 +117,12 @@ FFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 699
 9DE
 9DE
 9DE
 699
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -231,20 +142,6 @@ FFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 699
 699
 9DE
@@ -252,7 +149,6 @@ FFF
 9DE
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -271,19 +167,6 @@ FFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 699
 9DE
@@ -293,7 +176,6 @@ FFF
 9DE
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -310,17 +192,6 @@ FFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 699
 9DE
@@ -332,7 +203,6 @@ EFF
 9DE
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -347,15 +217,6 @@ EFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 699
 9DE
@@ -368,7 +229,6 @@ CFF
 9DE
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -382,14 +242,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -404,7 +256,6 @@ CFF
 9DE
 699
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -417,13 +268,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 699
 9DE
@@ -439,7 +283,6 @@ CFF
 9DE
 699
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -450,11 +293,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -471,7 +309,6 @@ CFF
 9DE
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -481,10 +318,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -503,7 +336,6 @@ CFF
 9DE
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -512,9 +344,6 @@ CFF
 452
 452
 452
-=======
-FFF
->>>>>>> origin/main
 134
 699
 699
@@ -620,7 +449,6 @@ FCD
 FCD
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -629,9 +457,6 @@ FCD
 452
 452
 452
-=======
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -650,7 +475,6 @@ CFF
 CFF
 9DE
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -659,9 +483,6 @@ CFF
 452
 452
 452
-=======
-FFF
->>>>>>> origin/main
 134
 134
 134
@@ -680,7 +501,6 @@ CFF
 9DE
 699
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -690,10 +510,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -710,7 +526,6 @@ CFF
 9DE
 699
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -722,12 +537,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -743,7 +552,6 @@ CFF
 699
 134
 134
-<<<<<<< HEAD
 452
 452
 452
@@ -756,13 +564,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -776,7 +577,6 @@ CFF
 699
 134
 134
-<<<<<<< HEAD
 452
 452
 452
@@ -790,14 +590,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 134
@@ -810,7 +602,6 @@ FFF
 134
 134
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -824,14 +615,6 @@ FFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 699
@@ -846,7 +629,6 @@ CFF
 9DE
 699
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -859,13 +641,6 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 699
 CFF
@@ -880,7 +655,6 @@ CFF
 CFF
 699
 699
-<<<<<<< HEAD
 452
 452
 452
@@ -894,40 +668,21 @@ CFF
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 699
 699
 699
 699
-<<<<<<< HEAD
 452
 452
-=======
-FFF
-FFF
->>>>>>> origin/main
 134
 134
 134
 699
 699
-<<<<<<< HEAD
 452
 452
 452
 452
 452
 452
-=======
-FFF
-FFF
-FFF
->>>>>>> origin/main
