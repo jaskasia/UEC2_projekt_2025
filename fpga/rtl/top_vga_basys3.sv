@@ -21,7 +21,9 @@
     output wire [3:0] vgaGreen,
     output wire [3:0] vgaBlue,
     input wire PS2Clk,
-    input wire PS2Data
+    input wire PS2Data,
+    input wire RsRx,
+    output wire RsTx
 );
 
 timeunit 1ns;
@@ -33,6 +35,10 @@ timeprecision 1ps;
 
      wire clk65MHz;
      wire locked;
+
+    logic [7:0] data_uart, data_vga;
+    logic data_ready;
+     
  
      /**
       * FPGA submodules placement
@@ -62,9 +68,22 @@ top_vga u_top_vga (
     .hs(Hsync),
     .vs(Vsync),
     .ps2_clk(PS2Clk),
-    .ps2_data(PS2Data)
+    .ps2_data(PS2Data),
+    .data_out(data_vga),
+    .data_ready(data_ready),
+    .data_in(data_uart)
 );
 
+
+top_uart u_top_uart (
+    .clk(clk65MHz),
+    .rst(btnC),
+    .rx(RsRx),
+    .tx(RsTx),
+    .data_in(data_vga),
+    .data_ready,
+    .data_out(data_uart)
+);
 
 endmodule
 
