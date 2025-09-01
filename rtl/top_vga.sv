@@ -13,14 +13,18 @@ module top_vga (
     input  logic rst,
     input  wire ps2_clk,
     input  wire ps2_data,
- 
+    
+    input logic [7:0] data_in,
+    output logic data_ready,
+    output logic [7:0] data_out,
+
     output logic vs,
     output logic hs,
     output logic [3:0] r,
     output logic [3:0] g,
     output logic [3:0] b
 );
- 
+    
     logic [7:0] rx_data;
     logic o_flag;
     logic key_jump, key_left, key_right;
