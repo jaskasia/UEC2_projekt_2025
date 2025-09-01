@@ -6,7 +6,7 @@
 <Project Version="7" Minor="56" Path="/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/build/vga_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="58c09b92d41d4454b33971f260d826a6"/>
+    <Option Name="Id" Val="f5b442b049744c22ba9c386e8714fadf"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

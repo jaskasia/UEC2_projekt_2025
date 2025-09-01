@@ -1,7 +1,6 @@
 // image rom content of: fire_figure.png
 // WIDTH = 26
 // HEIGHT = 26
-<<<<<<< HEAD
 452
 452
 452
@@ -93,104 +92,10 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-824
-824
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-824
-F42
-824
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 824
 F42
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -212,36 +117,12 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 824
 F42
 F42
 F42
 824
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -261,27 +142,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 824
 824
 F42
@@ -289,7 +149,6 @@ F42
 F42
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -308,26 +167,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 824
 F42
@@ -337,7 +176,6 @@ F42
 F42
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -354,24 +192,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 824
 F42
@@ -383,7 +203,6 @@ F42
 F42
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -398,22 +217,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 824
 F42
@@ -426,7 +229,6 @@ FB0
 F42
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -440,21 +242,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -469,7 +256,6 @@ FB0
 F42
 824
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -482,20 +268,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 824
 F42
@@ -511,7 +283,6 @@ F42
 F42
 824
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -522,18 +293,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -550,7 +309,6 @@ FB0
 F42
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -560,17 +318,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -589,7 +336,6 @@ FB0
 F42
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -598,16 +344,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 824
 824
@@ -626,7 +362,6 @@ FB0
 FB0
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -634,15 +369,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -662,7 +388,6 @@ FE7
 FB0
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -670,15 +395,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -698,7 +414,6 @@ FE7
 FB0
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -706,15 +421,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -734,7 +440,6 @@ FCD
 FCD
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -743,16 +448,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -771,7 +466,6 @@ FE7
 F71
 F42
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -780,16 +474,6 @@ F42
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 213
@@ -808,7 +492,6 @@ FE7
 F71
 824
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -818,17 +501,6 @@ F71
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -845,7 +517,6 @@ FB0
 F71
 F71
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -857,19 +528,6 @@ F71
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -885,7 +543,6 @@ F71
 F71
 213
 213
-<<<<<<< HEAD
 452
 452
 452
@@ -898,20 +555,6 @@ F71
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -925,7 +568,6 @@ F71
 F71
 213
 213
-<<<<<<< HEAD
 452
 452
 452
@@ -939,21 +581,6 @@ F71
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 213
@@ -966,7 +593,6 @@ F71
 213
 213
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -980,21 +606,6 @@ F71
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 824
@@ -1009,7 +620,6 @@ FE7
 FE7
 824
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -1022,20 +632,6 @@ FE7
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 213
 824
 FE7
@@ -1050,7 +646,6 @@ FE7
 FE7
 824
 824
-<<<<<<< HEAD
 452
 452
 452
@@ -1064,50 +659,21 @@ FE7
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
 134
 824
 824
 824
 824
-<<<<<<< HEAD
 452
 452
-=======
-FFF
-FFF
->>>>>>> origin/main
 213
 213
 213
 824
 824
-<<<<<<< HEAD
 452
 452
 452
 452
 452
 452
-=======
-FFF
-FFF
-FFF
-FFF
-FFF
-FFF
->>>>>>> origin/main
