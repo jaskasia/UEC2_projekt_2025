@@ -1,0 +1,341 @@
+*** Start analyzing build configuration ***
+INFO: Auto-config - Scanning: /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025
+INFO: Auto-config - VLOG: /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025
+INFO: Auto-config - VHDL: /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025
+INFO: Auto-config - Wrote:
+    .dvt/default.build.auto.1
+*** List of included argument files ***
+    Build configuration file:  /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/.dvt/default.build
+    -f /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/.dvt/default.build.auto.1
+*** List of invocations ***
+Invocation #1 +dvt_init+dvt in /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/.dvt/default.build.auto.1 at line 9
+*** Done analyzing build configuration [554 ms] ***
+
+*** Start VHDL build ***
+*** Done parsing [324 ms] ***
+*** Total number of lines [0] ***
+Performing post full build step 1 (VHDL - RU) [45 ms] ...
+*** Files summary [0 total, 0 unique] ***
+*** Done VHDL build [374 ms] ***
+
+*** Start SystemVerilog build ***
+*** Invocation #1***
+Loading (1) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v [25 ms, 88 lines, Verilog_2001] ...
+Loading (2) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v [30 ms, 211 lines, Verilog_2001] ...
+Loading (3) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv [9 ms, 90 lines, SystemVerilog_2012] ...
+Loading (4) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv [24 ms, 97 lines, SystemVerilog_2012] ...
+Loading (5) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv [19 ms, 118 lines, SystemVerilog_2012] ...
+Loading (6) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv [12 ms, 94 lines, SystemVerilog_2012] ...
+Loading (7) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v [10 ms, 83 lines, Verilog_2001] ...
+Loading (8) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/debouncer.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/debouncer.v [4 ms, 43 lines, Verilog_2001] ...
+Loading (9) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/keyboard_ctl.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/keyboard_ctl.sv [8 ms, 58 lines, SystemVerilog_2012] ...
+Loading (10) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv [7 ms, 59 lines, SystemVerilog_2012] ...
+Loading (11) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_uart.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_uart.sv [6 ms, 82 lines, SystemVerilog_2012] ...
+Loading (12) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv [15 ms, 197 lines, SystemVerilog_2012] ...
+Loading (13) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v [4 ms, 32 lines, Verilog_2001] ...
+Loading (14) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v [8 ms, 93 lines, Verilog_2001] ...
+Loading (15) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_21_fifo_test.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_21_fifo_test.v [6 ms, 31 lines, Verilog_2001] ...
+Loading (16) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v [9 ms, 98 lines, Verilog_2001] ...
+Loading (17) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_02_flag_buf.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_02_flag_buf.v [4 ms, 49 lines, Verilog_2001] ...
+Loading (18) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v [10 ms, 116 lines, Verilog_2001] ...
+Loading (19) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v [8 ms, 53 lines, Verilog_2001] ...
+Loading (20) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv [4 ms, 23 lines, SystemVerilog_2012] ...
+Loading (21) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/tiff_writer.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/tiff_writer.sv [36 ms, 405 lines, SystemVerilog_2012] ...
+Loading (22) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/keyboard_ctl/keyboard_ctl_tb.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/keyboard_ctl/keyboard_ctl_tb.sv [8 ms, 109 lines, SystemVerilog_2012] ...
+Loading (23) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/move_ctr_fsm/move_ctr_fsm_tb.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/move_ctr_fsm/move_ctr_fsm_tb.sv [5 ms, 81 lines, SystemVerilog_2012] ...
+Loading (24) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv [5 ms, 106 lines, SystemVerilog_2012] ...
+Loading (25) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_pkg.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_pkg.sv [3 ms, 34 lines, SystemVerilog_2012] ...
+Loading (26) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/vga_timing/vga_timing_tb.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/vga_timing/vga_timing_tb.sv [7 ms, 120 lines, SystemVerilog_2012] ...
+Loading (27) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv [7 ms, 110 lines, SystemVerilog_2012] ...
+Loading (28) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_timing.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_timing.sv [7 ms, 98 lines, SystemVerilog_2012] ...
+Loading (29) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/move_ctr_fsm.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/move_ctr_fsm.sv [11 ms, 181 lines, SystemVerilog_2012] ...
+Loading (30) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_bg.sv ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_bg.sv [5 ms, 78 lines, SystemVerilog_2012] ...
+Loading (31) /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v ...
+Done /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v [5 ms, 85 lines, Verilog_2001] ...
+*** Done invocation #1 [331 ms] ***
+*** Done parsing [LT 236 ms, PT 331 ms] ***
+*** Total number of lines [3 122] ***
+Performing post full build actions ...
+Performing post full build step 1 (SRI) [0 ms] ...
+Performing post full build step 2 (RI) [1 ms] ...
+Performing post full build step 3 (RCP) [1 ms] ...
+*** Files summary [31 total, 31 unique, 0 optimized] ***
+*** Done SystemVerilog build [552 ms] ***
+
+*** Start mixed mode extension build ***
+Performing mixed post full build step (VHDL - RU) [4 ms] ...
+Performing mixed post full build step (VHDL - RT) [354 ms] ...
+Performing mixed post full build step (VLOG - RI) [1 ms] ...
+*** Warning: UNSPECIFIED_TOP: Please specify a -top module/entity/configuration in the project build file
+*** Top design candidates: work.fifo_test, work.keyboard_ctl_tb, work.move_ctr_fsm_tb, work.top_fpga_tb, work.vga_timing_tb, work.top_vga_tb
+Performing mixed post full build step (MIXED - ELAB) [419 ms] ...
+Performing mixed post full build step (MIXED - UNEL) [52 ms] ...
+*** Warning: UNDECLARED_MODULE: Module 'debounce' is not declared
+    at line 14 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_21_fifo_test.v:14 [compile index 15]
+*** Warning: UNDECLARED_MODULE: Module 'debounce' is not declared
+    at line 18 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_21_fifo_test.v:18 [compile index 15]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'dut' of module 'top_vga_basys3' is missing port connection to input 'PS2Clk, PS2Data, RsRx'
+    at line 59 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv:59 [compile index 24]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'dut' of module 'top_vga_basys3' is missing port connection to output 'RsTx'
+    at line 59 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv:59 [compile index 24]
+*** Warning: UNDECLARED_MODULE: Module 'IBUF' is not declared
+    at line 78 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:78 [compile index 2]
+*** Warning: UNDECLARED_MODULE: Module 'MMCME2_ADV' is not declared
+    at line 123 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:123 [compile index 2]
+*** Warning: UNDECLARED_MODULE: Module 'BUFG' is not declared
+    at line 185 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:185 [compile index 2]
+*** Warning: UNDECLARED_MODULE: Module 'BUFGCE' is not declared
+    at line 195 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:195 [compile index 2]
+*** Warning: UNDECLARED_MODULE: Module 'BUFH' is not declared
+    at line 200 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:200 [compile index 2]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'data_in' of '8-bit' type from 'data_' of '1-bit' type
+    at line 74 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:74 [compile index 3]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'hcount' of '12-bit' type from 'hcount' of '11-bit' type
+    at line 152 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:152 [compile index 12]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'vcount' of '12-bit' type from 'vcount' of '11-bit' type
+    at line 153 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:153 [compile index 12]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'dut' of module 'top_vga' is missing port connection to input 'data_in'
+    at line 59 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv:59 [compile index 27]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'dut' of module 'top_vga' is missing port connection to output 'data_ready, data_out'
+    at line 59 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv:59 [compile index 27]
+*** Warning: UNDRIVEN_INPUT_PORT: Input port 'ps2_clk' is not driven
+    at line 67 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv:67 [compile index 27]
+*** Warning: UNDRIVEN_INPUT_PORT: Input port 'ps2_data' is not driven
+    at line 68 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv:68 [compile index 27]
+*** Warning: NON_STANDARD_PORT_DEFAULT_VALUE: Ouput port 'keycode' cannot have a default value
+    at line 27 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:27 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '0' of '32-bit' type
+    at line 55 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:55 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '1' of '32-bit' type
+    at line 56 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:56 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '2' of '32-bit' type
+    at line 57 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:57 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '3' of '32-bit' type
+    at line 58 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:58 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '4' of '32-bit' type
+    at line 59 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:59 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '5' of '32-bit' type
+    at line 60 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:60 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '6' of '32-bit' type
+    at line 61 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:61 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '7' of '32-bit' type
+    at line 62 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:62 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '8' of '32-bit' type
+    at line 63 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:63 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '9' of '32-bit' type
+    at line 64 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:64 [compile index 7]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'cnt' of '4-bit' type and item expression '10' of '32-bit' type
+    at line 65 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:65 [compile index 7]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'count' of '5-bit' type from ''b0' of '32-bit' type
+    at line 38 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/debouncer.v:38 [compile index 8]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 95 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:95 [compile index 5]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 96 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:96 [compile index 5]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 99 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:99 [compile index 5]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 100 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:100 [compile index 5]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 101 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:101 [compile index 5]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'platform_nr[i]' of '5-bit' type and item expression '0' of '32-bit' type
+    at line 104 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:104 [compile index 5]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'platform_nr[i]' of '5-bit' type and item expression '1' of '32-bit' type
+    at line 105 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:105 [compile index 5]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'platform_nr[i]' of '5-bit' type and item expression '2' of '32-bit' type
+    at line 106 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:106 [compile index 5]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 80 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:80 [compile index 4]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 81 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:81 [compile index 4]
+*** Warning: STATIC_INITIALIZATION: Explicit 'static' or 'automatic' is required when implicit static variable is initialized
+    at line 82 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:82 [compile index 4]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'frame_number' in sequential logic (use non-blocking assignment)
+    at line 401 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/tiff_writer.sv:401 [compile index 21]
+*** Warning: NON_STANDARD_PORT_DEFAULT_VALUE: Ouput port 'enter' cannot have a default value
+    at line 22 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:22 [compile index 10]
+*** Warning: NON_STANDARD_PORT_DEFAULT_VALUE: Ouput port 'spacebar' cannot have a default value
+    at line 23 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:23 [compile index 10]
+*** Warning: NON_STANDARD_PORT_DEFAULT_VALUE: Ouput port 'key_w' cannot have a default value
+    at line 24 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:24 [compile index 10]
+*** Warning: NON_STANDARD_PORT_DEFAULT_VALUE: Ouput port 'key_a' cannot have a default value
+    at line 25 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:25 [compile index 10]
+*** Warning: NON_STANDARD_PORT_DEFAULT_VALUE: Ouput port 'key_d' cannot have a default value
+    at line 26 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:26 [compile index 10]
+*** Warning: UNELABORATED_MODULE: Module 'work.flag_buf' is not elaborated
+    at line 2 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_02_flag_buf.v:2 [compile index 17]
+*** Warning: UNELABORATED_MODULE: Module 'work.glbl' is not elaborated
+    at line 6 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:6 [compile index 31]
+Performing mixed post full build step (VHDL - RD) [4 ms] ...
+Performing mixed post full build step (VHDL - US) [0 ms] ...
+Performing mixed post full build step (VHDL - USBD) [51 ms] ...
+Performing mixed post full build step (VLOG - RD) [8 ms] ...
+Performing mixed post full build step (VLOG - US) [101 ms] ...
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk_in2_clk_wiz_project' is never used
+    at line 77 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:77 [compile index 2]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk_75MHz_clk_wiz_project' is never used
+    at line 93 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:93 [compile index 2]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk_10MHz_clk_wiz_project' is never used
+    at line 94 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:94 [compile index 2]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk_out4_clk_wiz_project' is never used
+    at line 95 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:95 [compile index 2]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk_out5_clk_wiz_project' is never used
+    at line 96 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:96 [compile index 2]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk_out6_clk_wiz_project' is never used
+    at line 97 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:97 [compile index 2]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk_out7_clk_wiz_project' is never used
+    at line 98 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:98 [compile index 2]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'clk_65MHz_clk_wiz_project_en_clk' using `default_nettype set to wire
+    at line 201 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:201 [compile index 2]
+*** Warning: INTERNAL_GENERATED_CLOCK: Clock signal 'clk_65MHz_clk_wiz_project_en_clk' is not an input port
+    at line 203 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:203 [compile index 2]
+*** Warning: SIGNAL_NEVER_READ: Signal 'locked' is never read (connected to sub-instance output port)
+    at line 37 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:37 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'data_uart' is never read (connected to sub-instance output port)
+    at line 39 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:39 [compile index 3]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'data_' using `default_nettype set to wire
+    at line 74 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:74 [compile index 3]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'data_' is never written (connected to sub-instance input port)
+    at line 74 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:74 [compile index 3]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'fire_figure' is never written
+    at line 25 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:25 [compile index 4]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'water_figure' is never written
+    at line 27 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:27 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'WATER_WIDTH' is never used
+    at line 37 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:37 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'WATER_HEIGHT' is never used
+    at line 38 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:38 [compile index 4]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p0' is never written
+    at line 28 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:28 [compile index 5]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p1' is never written
+    at line 29 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:29 [compile index 5]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p2' is never written
+    at line 30 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:30 [compile index 5]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'start_text_full' is never written
+    at line 40 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:40 [compile index 6]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'you_win' is never written
+    at line 41 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:41 [compile index 6]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'you_lose' is never written
+    at line 42 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:42 [compile index 6]
+*** Warning: INTERNAL_GENERATED_CLOCK: Clock signal 'kclkf' is not an input port
+    at line 53 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:53 [compile index 7]
+*** Warning: SIGNAL_NOT_RESET: Signal 'datacur' is not reset
+    at line 56 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:56 [compile index 7]
+*** Warning: SIGNAL_NOT_RESET: Signal 'flag' is not reset
+    at line 64 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:64 [compile index 7]
+*** Warning: INTERNAL_GENERATED_RESET: Reset signal 'cnt' is not an input port
+    at line 69 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:69 [compile index 7]
+*** Warning: SIGNAL_NEVER_READ: Signal 'end_game' is never read
+    at line 34 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:34 [compile index 12]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'key_enter' using `default_nettype set to wire
+    at line 109 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:109 [compile index 12]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'key_space' using `default_nettype set to wire
+    at line 110 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:110 [compile index 12]
+*** Warning: INTERNAL_GENERATED_RESET: Reset signal 'file_open' is not an input port
+    at line 388 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/tiff_writer.sv:388 [compile index 21]
+*** Warning: MULTIPLE_CLOCKS_BLOCK: Procedural block driven by multiple clocks (go_delayed, go)
+    at line 395 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/tiff_writer.sv:395 [compile index 21]
+*** Warning: SIGNAL_NEVER_READ: Signal 'pos_x' is never read (connected to sub-instance output port)
+    at line 9 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/move_ctr_fsm/move_ctr_fsm_tb.sv:9 [compile index 23]
+*** Warning: SIGNAL_NEVER_READ: Signal 'pos_y' is never read (connected to sub-instance output port)
+    at line 9 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/move_ctr_fsm/move_ctr_fsm_tb.sv:9 [compile index 23]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'pclk' is never written (connected to sub-instance input port)
+    at line 40 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv:40 [compile index 24]
+*** Warning: SIGNAL_NEVER_READ: Signal 'hs' is never read (connected to sub-instance output port)
+    at line 41 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_fpga/top_fpga_tb.sv:41 [compile index 24]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk6' is never used
+    at line 40 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv:40 [compile index 27]
+*** Warning: SIGNAL_NEVER_READ: Signal 'hs' is never read (connected to sub-instance output port)
+    at line 41 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/top_vga/top_vga_tb.sv:41 [compile index 27]
+*** Warning: SIGNAL_NEVER_READ: Signal 'GSR' is never read
+    at line 14 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:14 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'GTS' is never read
+    at line 15 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:15 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'GWE' is never used
+    at line 16 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:16 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'PRLD' is never read
+    at line 17 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:17 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'GRESTORE' is never read
+    at line 18 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:18 [compile index 31]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p_up_tmp' is never written
+    at line 19 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:19 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'PLL_LOCKG' is never read
+    at line 20 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:20 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PROGB_GLBL' is never used
+    at line 22 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:22 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'CCLKO_GLBL' is never used
+    at line 23 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:23 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'FCSBO_GLBL' is never used
+    at line 24 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:24 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'DO_GLBL' is never used
+    at line 25 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:25 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'DI_GLBL' is never used
+    at line 26 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:26 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TDO_GLBL' is never used
+    at line 34 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:34 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TCK_GLBL' is never used
+    at line 35 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:35 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TDI_GLBL' is never used
+    at line 36 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:36 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TMS_GLBL' is never used
+    at line 37 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:37 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TRST_GLBL' is never used
+    at line 38 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:38 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_CAPTURE_GLBL' is never used
+    at line 40 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:40 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_RESET_GLBL' is never used
+    at line 41 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:41 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_SHIFT_GLBL' is never used
+    at line 42 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:42 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_UPDATE_GLBL' is never used
+    at line 43 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:43 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_RUNTEST_GLBL' is never used
+    at line 44 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:44 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL1_GLBL' is never read
+    at line 46 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:46 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL2_GLBL' is never read
+    at line 47 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:47 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL3_GLBL' is never read
+    at line 48 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:48 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL4_GLBL' is never read
+    at line 49 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:49 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO1_GLBL' is never read
+    at line 51 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:51 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO2_GLBL' is never read
+    at line 52 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:52 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO3_GLBL' is never read
+    at line 53 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:53 [compile index 31]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO4_GLBL' is never read
+    at line 54 in /student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/sim/common/glbl.v:54 [compile index 31]
+*** Done mixed mode extension build [1s.193ms] ***
+*** Total build time [2s.706ms] ***

@@ -16,13 +16,13 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4146
+INFO: [Synth 8-7075] Helper process launched with PID 7486
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2717.812 ; gain = 0.000 ; free physical = 2827 ; free virtual = 14656
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2717.816 ; gain = 0.000 ; free physical = 6299 ; free virtual = 17895
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_vga_basys3' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:15]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_project' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v:67]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_project_clk_wiz' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:65]
+INFO: [Synth 8-6157] synthesizing module 'top_vga_basys3' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_project' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v:67]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_project_clk_wiz' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:65]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home_local/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
 INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/home_local/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home_local/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63510]
@@ -46,90 +46,90 @@ INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [/home_local/Xilinx/Vivado/202
 INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (4#1) [/home_local/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1093]
 INFO: [Synth 8-6157] synthesizing module 'BUFH' [/home_local/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1319]
 INFO: [Synth 8-6155] done synthesizing module 'BUFH' (5#1) [/home_local/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1319]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_project_clk_wiz' (6#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_project' (7#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v:67]
-INFO: [Synth 8-6157] synthesizing module 'top_vga' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_vga.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:23]
-INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_project_clk_wiz' (6#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_project' (7#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v:67]
+INFO: [Synth 8-6157] synthesizing module 'top_vga' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/debouncer.v:23]
 	Parameter COUNT_MAX bound to: 19 - type: integer 
 	Parameter COUNT_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debouncer' (8#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/debouncer.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (9#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:23]
-INFO: [Synth 8-6157] synthesizing module 'read_keyboard' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:16]
-INFO: [Synth 8-6155] done synthesizing module 'read_keyboard' (10#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'move_ctr_fsm' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/move_ctr_fsm.sv:12]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/move_ctr_fsm.sv:116]
-INFO: [Synth 8-6155] done synthesizing module 'move_ctr_fsm' (11#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/move_ctr_fsm.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'vga_timing' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_timing.sv:10]
-INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (12#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_timing.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'draw_screens' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_screens.sv:12]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/start_text_full.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_screens.sv:44]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/next_time.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_screens.sv:45]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/win.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_screens.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'draw_screens' (13#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_screens.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'draw_bg' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_bg.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'draw_bg' (14#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_bg.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'draw_platforms' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_platforms.sv:12]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/p0.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_platforms.sv:33]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/p1.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_platforms.sv:34]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/p2.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_platforms.sv:35]
-INFO: [Synth 8-6155] done synthesizing module 'draw_platforms' (15#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_platforms.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'draw_figures' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_figures.sv:11]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/fire_figure.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_figures.sv:31]
-INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/water_figure.dat' is read successfully [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_figures.sv:32]
-INFO: [Synth 8-6155] done synthesizing module 'draw_figures' (16#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_figures.sv:11]
-WARNING: [Synth 8-6014] Unused sequential element end_game_reg was removed.  [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_vga.sv:43]
-INFO: [Synth 8-6155] done synthesizing module 'top_vga' (17#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_vga.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'top_uart' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_uart.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'uart' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (8#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (9#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'read_keyboard' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'read_keyboard' (10#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'move_ctr_fsm' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/move_ctr_fsm.sv:12]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/move_ctr_fsm.sv:116]
+INFO: [Synth 8-6155] done synthesizing module 'move_ctr_fsm' (11#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/move_ctr_fsm.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (11#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_timing.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (12#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_timing.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'draw_screens' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:12]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/start_text_full.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:44]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/next_time.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:45]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/win.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'draw_screens' (13#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'draw_bg' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_bg.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'draw_bg' (14#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_bg.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'draw_platforms' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:12]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/p0.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:33]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/p1.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:34]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/p2.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'draw_platforms' (15#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'draw_figures' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:11]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/fire_figure.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:31]
+INFO: [Synth 8-3876] $readmem data file '../../rtl/graphics/water_figure.dat' is read successfully [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:32]
+INFO: [Synth 8-6155] done synthesizing module 'draw_figures' (16#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv:11]
+WARNING: [Synth 8-6014] Unused sequential element end_game_reg was removed.  [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:43]
+INFO: [Synth 8-6155] done synthesizing module 'top_vga' (17#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'top_uart' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_uart.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'uart' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v:2]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
 	Parameter DVSR bound to: 54 - type: integer 
 	Parameter DVSR_BIT bound to: 7 - type: integer 
 	Parameter FIFO_W bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v:2]
 	Parameter N bound to: 7 - type: integer 
 	Parameter M bound to: 54 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (18#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v:2]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (18#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v:2]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (19#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v:2]
-INFO: [Synth 8-6157] synthesizing module 'fifo' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (19#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v:2]
 	Parameter B bound to: 8 - type: integer 
 	Parameter W bound to: 1 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'fifo' (20#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v:2]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (20#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v:2]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (21#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'uart' (22#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'top_uart' (23#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_uart.sv:1]
-WARNING: [Synth 8-3848] Net data_ in module/entity top_vga_basys3 does not have driver. [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:74]
-INFO: [Synth 8-6155] done synthesizing module 'top_vga_basys3' (24#1) [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (21#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (22#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_uart' (23#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_uart.sv:1]
+WARNING: [Synth 8-3848] Net data_ in module/entity top_vga_basys3 does not have driver. [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:74]
+INFO: [Synth 8-6155] done synthesizing module 'top_vga_basys3' (24#1) [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv:15]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2717.812 ; gain = 0.000 ; free physical = 3433 ; free virtual = 15265
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2717.816 ; gain = 0.000 ; free physical = 7240 ; free virtual = 18815
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2717.812 ; gain = 0.000 ; free physical = 3461 ; free virtual = 15292
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2717.816 ; gain = 0.000 ; free physical = 7245 ; free virtual = 18821
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2717.812 ; gain = 0.000 ; free physical = 3461 ; free virtual = 15292
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2717.816 ; gain = 0.000 ; free physical = 7245 ; free virtual = 18821
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2717.812 ; gain = 0.000 ; free physical = 3448 ; free virtual = 15279
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2717.816 ; gain = 0.000 ; free physical = 7233 ; free virtual = 18808
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_project/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -137,38 +137,38 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]
-Finished Parsing XDC File [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
+Parsing XDC File [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]
+Finished Parsing XDC File [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_vga_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]
-Finished Parsing XDC File [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
+Parsing XDC File [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]
+Finished Parsing XDC File [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_vga_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2781.723 ; gain = 0.000 ; free physical = 3343 ; free virtual = 15174
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2781.727 ; gain = 0.000 ; free physical = 7073 ; free virtual = 18648
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   BUFGCE => BUFGCTRL: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2781.723 ; gain = 0.000 ; free physical = 3343 ; free virtual = 15174
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2781.727 ; gain = 0.000 ; free physical = 7073 ; free virtual = 18648
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2781.723 ; gain = 63.910 ; free physical = 3433 ; free virtual = 15265
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2781.727 ; gain = 63.910 ; free physical = 7227 ; free virtual = 18802
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2781.723 ; gain = 63.910 ; free physical = 3433 ; free virtual = 15265
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2781.727 ; gain = 63.910 ; free physical = 7227 ; free virtual = 18802
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2781.723 ; gain = 63.910 ; free physical = 3433 ; free virtual = 15265
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2781.727 ; gain = 63.910 ; free physical = 7227 ; free virtual = 18802
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'move_ctr_fsm'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
@@ -204,7 +204,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_tx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2781.723 ; gain = 63.910 ; free physical = 3376 ; free virtual = 15209
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2781.727 ; gain = 63.910 ; free physical = 7062 ; free virtual = 18640
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -289,7 +289,7 @@ Why this net has no driver: _order_recur <const0>
 WARNING: [Synth 8-3332] Sequential element (u_uart/uart_rx_unit/FSM_sequential_state_reg_reg[1]) is unused and will be removed from module top_uart.
 WARNING: [Synth 8-3332] Sequential element (u_uart/uart_rx_unit/FSM_sequential_state_reg_reg[0]) is unused and will be removed from module top_uart.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:07 ; elapsed = 00:04:18 . Memory (MB): peak = 2798.078 ; gain = 80.266 ; free physical = 3304 ; free virtual = 15157
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:28 ; elapsed = 00:04:38 . Memory (MB): peak = 2814.090 ; gain = 96.273 ; free physical = 5948 ; free virtual = 17545
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -341,13 +341,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:12 ; elapsed = 00:04:22 . Memory (MB): peak = 2798.082 ; gain = 80.270 ; free physical = 3185 ; free virtual = 15038
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:33 ; elapsed = 00:04:43 . Memory (MB): peak = 2814.094 ; gain = 96.277 ; free physical = 5839 ; free virtual = 17437
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:15 ; elapsed = 00:04:25 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3170 ; free virtual = 15022
+Finished Timing Optimization : Time (s): cpu = 00:04:36 ; elapsed = 00:04:47 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5817 ; free virtual = 17415
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -367,7 +367,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:17 ; elapsed = 00:04:28 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3232 ; free virtual = 15085
+Finished Technology Mapping : Time (s): cpu = 00:04:39 ; elapsed = 00:04:49 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5879 ; free virtual = 17476
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -385,37 +385,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:20 ; elapsed = 00:04:31 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3232 ; free virtual = 15085
+Finished IO Insertion : Time (s): cpu = 00:04:42 ; elapsed = 00:04:53 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5876 ; free virtual = 17474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:20 ; elapsed = 00:04:31 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3232 ; free virtual = 15085
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:42 ; elapsed = 00:04:53 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5876 ; free virtual = 17474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:21 ; elapsed = 00:04:31 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3233 ; free virtual = 15086
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:42 ; elapsed = 00:04:53 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5877 ; free virtual = 17475
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:21 ; elapsed = 00:04:31 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3233 ; free virtual = 15086
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:42 ; elapsed = 00:04:53 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5877 ; free virtual = 17475
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:21 ; elapsed = 00:04:32 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3234 ; free virtual = 15087
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:43 ; elapsed = 00:04:53 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5878 ; free virtual = 17476
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:21 ; elapsed = 00:04:32 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3234 ; free virtual = 15087
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:43 ; elapsed = 00:04:53 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5878 ; free virtual = 17476
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -453,19 +453,19 @@ Report Cell Usage:
 |20    |OBUF       |    15|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:21 ; elapsed = 00:04:32 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3234 ; free virtual = 15087
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:43 ; elapsed = 00:04:53 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5878 ; free virtual = 17476
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:19 ; elapsed = 00:04:29 . Memory (MB): peak = 2798.086 ; gain = 16.363 ; free physical = 3288 ; free virtual = 15141
-Synthesis Optimization Complete : Time (s): cpu = 00:04:21 ; elapsed = 00:04:32 . Memory (MB): peak = 2798.086 ; gain = 80.273 ; free physical = 3288 ; free virtual = 15141
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:41 ; elapsed = 00:04:51 . Memory (MB): peak = 2814.098 ; gain = 32.371 ; free physical = 5933 ; free virtual = 17530
+Synthesis Optimization Complete : Time (s): cpu = 00:04:43 ; elapsed = 00:04:54 . Memory (MB): peak = 2814.098 ; gain = 96.281 ; free physical = 5933 ; free virtual = 17531
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2798.086 ; gain = 0.000 ; free physical = 3378 ; free virtual = 15231
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2814.098 ; gain = 0.000 ; free physical = 6022 ; free virtual = 17620
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_project/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 343 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2830.098 ; gain = 0.000 ; free physical = 3324 ; free virtual = 15177
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2846.109 ; gain = 0.000 ; free physical = 5969 ; free virtual = 17567
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   BUFGCE => BUFGCTRL: 1 instance 
@@ -475,7 +475,7 @@ Synth Design complete, checksum: c541d008
 INFO: [Common 17-83] Releasing license: Synthesis
 92 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:30 ; elapsed = 00:04:36 . Memory (MB): peak = 2830.098 ; gain = 112.406 ; free physical = 3537 ; free virtual = 15390
-INFO: [Common 17-1381] The checkpoint '/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/build/vga_project.runs/synth_1/top_vga_basys3.dcp' has been generated.
+synth_design: Time (s): cpu = 00:04:52 ; elapsed = 00:04:58 . Memory (MB): peak = 2846.109 ; gain = 128.414 ; free physical = 6182 ; free virtual = 17780
+INFO: [Common 17-1381] The checkpoint '/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/build/vga_project.runs/synth_1/top_vga_basys3.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_vga_basys3_utilization_synth.rpt -pb top_vga_basys3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep  1 23:51:44 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  2 20:13:46 2025...
