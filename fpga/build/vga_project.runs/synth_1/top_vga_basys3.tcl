@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/build/vga_project.runs/synth_1/top_vga_basys3.tcl"
+  variable script "/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/build/vga_project.runs/synth_1/top_vga_basys3.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,37 +76,37 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/build/vga_project.cache/wt [current_project]
-set_property parent.project_path /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/build/vga_project.xpr [current_project]
+set_property webtalk.parent_dir /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/build/vga_project.cache/wt [current_project]
+set_property parent.project_path /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/build/vga_project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_pkg.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_bg.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_figures.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_platforms.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/draw/draw_screens.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/move_ctr_fsm.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_uart.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/top_vga.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_if.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/vga_timing.sv
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_pkg.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_bg.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_figures.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_platforms.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/draw/draw_screens.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/move_ctr_fsm.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/read_keyboard.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_uart.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/top_vga.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_if.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/vga_timing.sv
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/top_vga_basys3.sv
 }
 read_verilog -library xil_defaultlib {
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/keyboard/debouncer.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v
-  /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/PS2Receiver.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/rtl/clk_wiz_project_clk_wiz.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/keyboard/debouncer.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_11_mod_m_counter.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch04_20_fifo.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_01_uart_rx.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_03_uart_tx.v
+  /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/rtl/uart/list_ch08_04_uart.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -117,11 +117,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc
-set_property used_in_implementation false [get_files /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]
+read_xdc /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc
+set_property used_in_implementation false [get_files /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/top_vga_basys3.xdc]
 
-read_xdc /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc
-set_property used_in_implementation false [get_files /home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]
+read_xdc /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc
+set_property used_in_implementation false [get_files /home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/constraints/clk_wiz_project.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

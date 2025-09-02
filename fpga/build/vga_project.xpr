@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="56" Path="/home/student/jjaskowiec/Downloads/UEC2_projekt_2025/fpga/build/vga_project.xpr">
+<Project Version="7" Minor="56" Path="/home/student/jjaskowiec/Documents/MTM_UEC2_projekt_2025/fpga/build/vga_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="a73cf8bd15eb43cb842967904e15568e"/>
+    <Option Name="Id" Val="edbc554e5d0445029be6c3b00e9c4979"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
